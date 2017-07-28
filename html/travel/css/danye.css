@@ -1,0 +1,192 @@
+.main{
+    width:974px;
+    /*height:2156px;*/
+    background-color: #fff;
+    /*box-shadow: 0 0 2px #000;*/
+    margin: auto;
+    position: relative;
+    top:-128px;
+}
+.main_tit{
+    height: 70px;
+    text-align: left;
+    line-height: 70px;
+    padding-left: 20px;
+}
+.main_tit a{
+    display: block;
+    color: #000;
+    float: left;
+}
+.main_tit span{
+    float: left;
+    display: block;
+    color: #000;
+}
+.main_title{
+    height: 150px;
+    margin-top:46px;
+}
+.main_title h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.main_title h4{
+    text-align: center;
+    margin-top:13px;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 7.5px;
+    color: #f3ba0b;
+}
+.title_tu{
+    height: 77px;
+    position: relative;
+}
+.tu_line{
+    width:100%;
+    height:1px;
+    background-color: #000;
+    position: absolute;
+    top:45px;
+    left:0;
+}
+.tu{
+    position: absolute;
+    top:-5px;
+    left:355px;
+}
+.first_floor{
+    height: 696px;
+    margin-top:53px;
+    padding: 0 30px;
+}
+.ff_tit{
+    width:264px;
+    height:65px;
+    position: relative;
+}
+.ff_tit h2{
+    width:68px;
+    float: left;
+    letter-spacing: 2px;
+    color: #f8c939;
+    font-weight:800;
+    line-height: 38px;
+
+}
+.fgx{
+    width:75px;
+    height:2px;
+    position: absolute;
+    top:36px;
+    left:-13px;
+    background-color: #f8c939;
+    transform:rotate(165deg) ;
+}
+.ff_tit span{
+    float: left;
+    font-size:18px;
+    margin-bottom: 14px;
+    font-weight:900;
+    border-bottom: 3px solid #b2b2b2;
+}
+.ff_text{
+    margin-top:30px;
+}
+.ff_text p{
+    text-align: justify;
+}
+.ff_img{
+    height: 368px;
+    position: relative;
+}
+.tu1{
+    width: 356px;
+    height: 240px;
+    margin-left: 265px;
+    margin-top: 45px;
+    position: absolute;
+    z-index: 2;
+}
+.ff_img img{
+    float: left;
+}
+.tu2{
+    position: absolute;
+    left:111px;
+    top:109px;
+}
+.tu3{
+    position: absolute;
+    right:134px;
+    top:109px;
+}
+.second_floor{
+    height: 284px;
+    margin-top:30px;
+    overflow: hidden;
+}
+.sf_con{
+    height:96px;
+    margin-top:105px;
+    padding: 0 30px;
+    text-align: justify;
+}
+.third_floor{
+    height: 665px;
+    margin-top:100px;
+    position: relative;
+}
+.tf_xian{
+    width:1px;
+    height: 559px;
+    background-color: #000;
+    position: absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    margin-top:74px;
+}
+.circle{
+    width:21px;
+    height: 21px;
+    border-radius: 21px;
+    background-color: #f3ba0b;
+    position: absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+.year{
+    width:123px;
+    height: 46px;
+    border: 3px solid #000;
+    color: #000;
+    text-align: center;
+    line-height: 46px;
+    font-size: 26px;
+    position: absolute;
+    left:227px;
+    right:0;
+    margin: 0 auto;
+    margin-top: 553px;
+}
+.year_con{
+    width:217px;
+    height: 57px;
+    border-radius: 20px;
+    border: 4px dotted #f3ba0b;
+    position: absolute;
+    left:645px;
+    right:0;
+    margin: 0 auto;
+    margin-top: 527px;
+    text-align: justify;
+    font-size: 14px;
+    padding:15px 20px;
+
+}

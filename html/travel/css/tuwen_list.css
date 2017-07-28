@@ -1,0 +1,98 @@
+.main_con1{
+    width:100%;
+    /*height: 2214px;*/
+    padding: 10px 10px;
+    margin: auto;
+}
+.china li{
+    height: 321px;
+}
+.china li img{
+    float: left;
+    margin-left:127px;
+}
+.china li .ch_text{
+    float: left;
+    width:430px;
+    text-align: justify;
+    padding-left:20px;
+    padding-top: 58px;
+}
+.china li .ch_text p{
+    margin-bottom: 20px;
+    margin-top:10px;
+}
+.fenye{
+    /*width: 469px;*/
+    /*height: 29px;*/
+    margin-top:83px;
+    overflow: hidden;
+    margin-left:223px;
+}
+.fenye a,.fenye input,.fenye .go{
+    display: block;
+    float: left;
+    margin-left: 25px;
+    margin-top:3px;
+    line-height:29px;
+}
+.prev,.next{
+    display: block;
+    width: 29px;
+    height: 29px;
+    border-radius: 29px;
+    background: #f3ba0b;
+    color: #fff;
+    text-align: center;
+    line-height:29px;
+    font-size: 10px;
+}
+.fenye input{
+    width:98px;
+    height: 29px;
+    border-radius: 20px;
+    border:1px solid #999;
+}
+.fenye .go{
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background:#f3ba0b;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    position: relative;
+    left:-9px;
+    top:3px;
+    margin-left: -24px;
+    cursor: pointer;
+}
+.fenye a:hover{
+    color: #996035;
+    text-decoration: none;
+}
+.fr_text{
+    width:1158px;
+    height: 553px;
+}
+.text_1{
+    width:371px;
+    height: 550px;
+    background: #eeeeee;
+    float: left;
+    margin-right:15px;
+}
+.text_1 img{
+    width: 300px;
+    height: 225px;
+    display: block;
+    margin-top:15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.foreign{
+    width:1200px;
+    overflow: hidden;
+}
