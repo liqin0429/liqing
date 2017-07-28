@@ -1,0 +1,62 @@
+*{margin: 0;padding: 0;box-sizing: border-box;list-style: none;}
+html,body{width: 100%;height: 100%;overflow: hidden;}
+
+#fullPage-nav { font-size: 12px;z-index: 11;position: fixed;top:150px;bottom:0;margin:auto;right: 50px;}
+
+#fullPage-nav li { width: 90px; height: 21px; margin: 10px 0 0; vertical-align: middle;}
+
+#fullPage-nav li a { float: right; width: 21px; height: 21px; color: #8F9DA4; text-decoration: none; text-align: right; background: url("../img/dot.png") 5px 5px no-repeat;}
+
+#fullPage-nav li .active { background-position: 0 bottom;}
+#fullPage-nav span { display:block;width:31px;height: 31px;border-radius: 50%}
+#fullPage-nav span { display: none;}
+
+.fullPage-tooltip { float: left; top: 0; margin-right: 5px; font: 12px "Microsoft Yahei"; color: #8F9DA4; line-height: 21px;}
+
+
+
+.section{width: 100%;height:100%;margin: auto;overflow: hidden;position: relative;}
+.section:nth-child(1){background:url("../img/back2.jpg") no-repeat ;background-size:100% 100%;color: white;}
+.section:nth-child(2){background:url("../img/back4.png") no-repeat ;background-size:100% 100%;color: white;}
+.section:nth-child(3){background:url("../img/back3.jpg") no-repeat ;background-size:100% 100%;color: white;}
+.section:nth-child(4){background:url("../img/back5.jpg") no-repeat ;background-size:100% 100%;color: white;}
+.section:nth-child(5){background: url("../img/back6.jpg") no-repeat ;background-size:100% 100%;color: white;}
+.section:nth-child(6){background:url("../img/back2.jpg") no-repeat ;background-size:100% 100%;color: white;}
+.section:nth-child(7){background:url("../img/back2.jpg") no-repeat ;background-size:100% 100%;color: white;}
+.section:nth-child(8){background:url("../img/back2.jpg") no-repeat ;background-size:100% 100%;color: white;}
+.section:nth-child(9){background:url("../img/back2.jpg") no-repeat ;background-size:100% 100%;color: white;}
+.section:nth-child(10){background:url("../img/back2.jpg") no-repeat ;background-size:100% 100%;color: white;}
+
+.text{width: 300px;height: 30px;position: absolute;left: 0;right: 0;margin: auto;top:30px;z-index: 11;text-align: center;line-height: 30px;font-size:12px;transition:all 2s;transform:scale(1,1);}
+.packagebox{width: 1000px;height: 300px;position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;}
+.package{width: 25%;height: 100%;float: left;padding: 20px;text-align: center;line-height: 260px;background: rgba(10,10,10,0.3);transition: transform 2s ease;}
+.yunbox{width:100%;height: 300px;margin: auto;;background:url("../img/wind.png") repeat 0 0;margin-top: -320px;}
+@keyframes yundown {
+    0%{margin-top: -600px}
+    100%{margin-top: -320px;}
+}
+@keyframes yunup {
+    0%{margin-top: -320px}
+    100%{margin-top: -600px;}
+}
+.pillbox{width:1000px;height: 600px;margin: auto;position: relative;}
+.pill{width: 200px;height:400px;position: absolute;bottom: 0;opacity:0;transition: all 2s}
+.pill-left{left: -300px;background: url("../img/pill-left.png");background-size: cover;}
+.pill-right{right:-300px;background: url("../img/pill-right.png");background-size: cover;}
+.pill-center{width:650px;height:454px;left: 0;right: 0;margin: auto;bottom:-650px;background: url("../img/pill-bottom.jpg");z-index: 11;transition: all 1s}
+
+.cole{width:1094px;height: 374px;position: absolute;left: 0;right:0;margin: auto;transition:all 2s}
+.cole-left{background: url("../img/back44.jpg");left: -2500px;}
+.cole-right{background: url("../img/back33.jpg");right: -2500px;top:374px; }
+
+.vern{width:1355px;height: 500px;position: absolute;left:0;right:0;margin: auto;transition:all 2s;}
+.vern-1{bottom:-400px;background: url("../img/bg41.png") no-repeat;transition:all 2s}
+.vern-2{bottom:-500px;background: url("../img/bg42.png") no-repeat;transition:all 1s}
+.vern-3{bottom:-300px;background: url("../img/bg43.png") no-repeat;transition:all 2s}
+
+.wordbox{width:325px;height:325px;position: absolute;left: 0;right: 0;top:0;bottom:0;margin: auto;}
+.word{width:325px;height:325px;position: absolute;opacity: 0;transition:all 2s;}
+.word-1{left:-325px;top:-325px;background: url("../img/111.jpg") no-repeat;transition:all 2s;border-radius: 325px 0 0 0;}
+.word-2{right:-325px;top:-325px;background: url("../img/222.jpg") no-repeat;transition:all 2s;border-radius:  0 325px 0 0;}
+.word-3{right:-325px;bottom:-325px;background: url("../img/333.jpg") no-repeat;transition:all 2s;border-radius: 0 0 325px 0;}
+.word-4{left:-325px;bottom:-325px;background: url("../img/444.jpg") no-repeat;transition:all 2s;border-radius:  0 0  0 325px;}
