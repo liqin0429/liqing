@@ -1,0 +1,197 @@
+{
+  "spy.html": {
+    "resources": [
+      "img/s2.png",
+      "font/iconfont.css",
+      "js/common.js",
+      "img/s3.png",
+      "js/jquery.min.js",
+      "img/kq.png",
+      "css/swiper.min.css",
+      "js/swiper.min.js",
+      "img/s1.png",
+      "zn_login.html"
+    ],
+    "refer": []
+  },
+  "zn_login.html": {
+    "resources": [
+      "img/zn_zhanghao.png",
+      "img/zn_fenge.png",
+      "img/zn_touxiang.png",
+      "js/jquery.min.js",
+      "js/zn_login.js",
+      "img/zn_qq.png",
+      "js/common.js",
+      "img/zn_weibo.png",
+      "img/zn_disanfang.png",
+      "css/zn_login.css",
+      "img/zn_button.png",
+      "img/zn_loginimg.png",
+      "img/zn_pass.png",
+      "img/zn_weiixin.png",
+      "img/zn_logintitle.png",
+      "zn_zhuce.html"
+    ],
+    "refer": []
+  },
+  "zn_zhuce.html": {
+    "resources": [
+      "img/zn_gongxi.png",
+      "img/zn_cha.png",
+      "js/common.js",
+      "js/jquery.min.js",
+      "css/zn_zhuce.css",
+      "img/zn_yanzhengma.png",
+      "img/zn_yanzheng.png",
+      "js/zn_zhuce.js",
+      "js/Hammer.js",
+      "zn_index.html"
+    ],
+    "refer": []
+  },
+  "zn_index.html": {
+    "resources": [
+      "img/zn_nav7.png",
+      "css/zn_index.css",
+      "img/zn_nav6.png",
+      "img/zn_nav4.png",
+      "img/zn_header_03.png",
+      "img/zn_icon_03.png",
+      "img/zn_header_06.png",
+      "font/iconfont.css",
+      "img/zn_chuce_07.png",
+      "img/zn_nav3.png",
+      "js/common.js",
+      "img/zn_like1.png",
+      "img/zn_title.png",
+      "img/zn_icon_06.png",
+      "js/iscroll.js",
+      "img/zn_nav8.png",
+      "img/zn_footerimg.png",
+      "img/zn_chuce_03.png",
+      "img/zn_header_09.png",
+      "js/jquery.min.js",
+      "img/zn_nav1.png",
+      "img/zn_header.png",
+      "font/iconfont.woff",
+      "img/zn_nav5.png",
+      "img/zn_nav2.png",
+      "img/zn_banner.png",
+      "js/Hammer.js",
+      "zjl-sousuo.html",
+      "L-my.html",
+      "zn_self.html"
+    ],
+    "refer": []
+  },
+  "zjl-sousuo.html": {
+    "resources": [
+      "js/zjl-sousuo.js",
+      "css/zjl-sousuo.css",
+      "font/iconfont.css",
+      "img/zjl-di.png",
+      "img/zjl-rmss.png",
+      "js/common.js",
+      "js/jquery.min.js",
+      "img/zjl-qclsss.png",
+      "js/iscroll.js",
+      "img/zjl-lsss.png",
+      "img/zjl-tou_01.png",
+      "nowang.html",
+      "zn_index.html"
+    ],
+    "refer": []
+  },
+  "nowang.html": {
+    "resources": [
+      "font/iconfont.css",
+      "js/common.js",
+      "js/jquery.min.js",
+      "img/zjl-ding.png",
+      "img/zjl-tu.png",
+      "img/tjss.png",
+      "css/nowang.css",
+      "zjl-sousuo.html"
+    ],
+    "refer": []
+  },
+  "L-my.html": {
+    "resources": [
+      "img/L-5.png",
+      "img/dd41.png",
+      "img/L-10.png",
+      "img/L-2.png",
+      "img/L-8.png",
+      "img/dd2.png",
+      "js/common.js",
+      "css/L-my.css",
+      "img/L-3.png",
+      "css/common.css",
+      "L-dingdan.html",
+      "img/L-7.png",
+      "img/dd1.png",
+      "img/L-9.png",
+      "img/dd31.png",
+      "img/L-1.png",
+      "img/L-4.png"
+    ],
+    "refer": [
+      "L-dingdan.html"
+    ]
+  },
+  "L-dingdan.html": {
+    "resources": [
+      "img/dd-anniu11.png",
+      "img/dd-anniu1.png",
+      "img/dd-dizhi.png",
+      "img/dd-anniu222.png",
+      "js/L-dingdan.js",
+      "img/dd-anniu111.png",
+      "css/L-dingdan.css",
+      "img/dd-anniu22.png",
+      "img/dd4.png",
+      "img/3.png",
+      "img/dd-xuan2.png",
+      "img/dd-tit1.png",
+      "img/dd-xuan.png",
+      "img/dd-anniu2.png",
+      "img/dd-xing1.png",
+      "img/dd-mleft.png",
+      "js/zepto.min.js",
+      "img/dd-xing.png",
+      "zn_self.html",
+      "img/dd-main.png",
+      "img/dd3.png",
+      "js/common.js",
+      "js/iscroll.js"
+    ],
+    "refer": [
+      "zn_self.html"
+    ]
+  },
+  "zn_self.html": {
+    "resources": [
+      "img/zn_onean_02.png",
+      "L-my.html",
+      "zn_index.html",
+      "js/jquery.min.js",
+      "img/zn_selfbg.png",
+      "css/zn_self.css",
+      "js/common.js",
+      "js/zn_self.js",
+      "img/zn_onean_03.png",
+      "img/zn_onean_01.png",
+      "img/zn_tizhong.png",
+      "img/zn_shengao.png",
+      "img/zn_selftop.png",
+      "js/Hammer.js",
+      "font/iconfont.css",
+      "img/zn_footerimg.png"
+    ],
+    "refer": [
+      "L-my.html",
+      "zn_index.html"
+    ]
+  }
+}
