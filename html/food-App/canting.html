@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>餐厅推荐</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/canting.css">
+    <script src="js/rem.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+
+        var myScroll;
+
+        function loaded () {
+            myScroll = new IScroll('#wrapper', {
+                bounceEasing: 'elastic',
+                bounceTime: 1200,
+                click:true,
+            });
+        }
+
+//        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+//            capture: false,
+//            passive: false
+//        } : false);
+
+    </script>
+    <style>
+
+        #wrapper {
+            position: absolute;
+            z-index: 1;
+            top: 45px;
+            bottom: 48px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #scroller {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            transform: translateZ(0);
+            user-select: none;
+            text-size-adjust: none;
+        }
+    </style>
+</head>
+<body onload="loaded()">
+<!--头部开始-->
+<header>
+    <div class="lf-left">
+        <a href="index.html">
+            <img src="img/1-25.png" alt="">
+        </a>
+    </div>
+    <div class="lf-title">
+        <h6>餐厅推荐</h6>
+        <img src="img/1-1.png" alt="">
+    </div>
+    <div class="lf-right">
+        <a href="search.html">
+            <img src="img/1-12.png" alt="">
+        </a>
+    </div>
+</header>
+<!--头部结束-->
+<div id="wrapper">
+    <div id="scroller" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+        <ul>
+            <li>
+                <!--清单开始-->
+                <div class="lf-neikuan lf-neikuan1">
+                    <div class="lf-tit">
+                        <img src="img/1-38.png" alt="">
+                    </div>
+                    <div class="lf-con">
+                        <ul class="con1">
+                            <a href="xiangqing.html" style="display: block">
+                                <li class="conList">
+                                    <div class="cl-tu">
+                                        <img src="img/1_10.png" alt="">
+                                    </div>
+                                    <div class="cl-con">
+                                        <div class="blackCir c1"></div>
+                                        <div class="blackCir c2"></div>
+                                        <div class="photo">
+                                            <img src="img/1_13.png" alt="">
+                                        </div>
+                                        <div class="tuxian"></div>
+                                        <div class="hot">
+                                            <img src="img/1_17.png" alt="">
+                                        </div>
+                                        <div class="guo">
+                                            <h3>水果餐厅</h3>
+                                            <span>FRUIT RESTAURANT</span>
+                                            <h4>陆拾贰圆</h4>
+                                            <div class="wj">
+                                                <img src="img/1_20.png" alt="">
+                                            </div>
+                                            <p><span>62.00</span>&nbsp;RMB</p>
+                                        </div>
+                                        <div class="diz">
+                                            <div class="dw">
+                                                <img src="img/1_18.png" alt="">
+                                            </div>
+                                            <div class="ty">
+                                                <h5>太原小店区</h5>
+                                                <span>TAIYUANXIAODIAN</span>
+                                            </div>
+                                            <div class="pl">
+                                                <img src="img/1_21.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+                            <li class="conList">
+                                <div class="cl-tu">
+                                    <img src="img/1-40.png" alt="">
+                                </div>
+                                <div class="cl-con">
+                                    <div class="blackCir c1"></div>
+                                    <div class="blackCir c2"></div>
+                                    <div class="photo">
+                                        <img src="img/1_13.png" alt="">
+                                    </div>
+                                    <div class="tuxian"></div>
+                                    <div class="hot">
+                                        <img src="img/1_17.png" alt="">
+                                    </div>
+                                    <div class="guo">
+                                        <h3>水果餐厅</h3>
+                                        <span>FRUIT RESTAURANT</span>
+                                        <h4>陆拾贰圆</h4>
+                                        <div class="wj">
+                                            <img src="img/1_20.png" alt="">
+                                        </div>
+                                        <p><span>62.00</span>&nbsp;RMB</p>
+                                    </div>
+                                    <div class="diz">
+                                        <div class="dw">
+                                            <img src="img/1_18.png" alt="">
+                                        </div>
+                                        <div class="ty">
+                                            <h5>太原小店区</h5>
+                                            <span>TAIYUANXIAODIAN</span>
+                                        </div>
+                                        <div class="pl">
+                                            <img src="img/1_21.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="conList">
+                                <div class="cl-tu">
+                                    <img src="img/1-41.png" alt="">
+                                </div>
+                                <div class="cl-con">
+                                    <div class="blackCir c1"></div>
+                                    <div class="blackCir c2"></div>
+                                    <div class="photo">
+                                        <img src="img/1_13.png" alt="">
+                                    </div>
+                                    <div class="tuxian"></div>
+                                    <div class="hot">
+                                        <img src="img/1_17.png" alt="">
+                                    </div>
+                                    <div class="guo">
+                                        <h3>水果餐厅</h3>
+                                        <span>FRUIT RESTAURANT</span>
+                                        <h4>陆拾贰圆</h4>
+                                        <div class="wj">
+                                            <img src="img/1_20.png" alt="">
+                                        </div>
+                                        <p><span>62.00</span>&nbsp;RMB</p>
+                                    </div>
+                                    <div class="diz">
+                                        <div class="dw">
+                                            <img src="img/1_18.png" alt="">
+                                        </div>
+                                        <div class="ty">
+                                            <h5>太原小店区</h5>
+                                            <span>TAIYUANXIAODIAN</span>
+                                        </div>
+                                        <div class="pl">
+                                            <img src="img/1_21.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="conList">
+                                <div class="cl-tu">
+                                    <img src="img/1-43.png" alt="">
+                                </div>
+                                <div class="cl-con">
+                                    <div class="blackCir c1"></div>
+                                    <div class="blackCir c2"></div>
+                                    <div class="photo">
+                                        <img src="img/1_13.png" alt="">
+                                    </div>
+                                    <div class="tuxian"></div>
+                                    <div class="hot">
+                                        <img src="img/1_17.png" alt="">
+                                    </div>
+                                    <div class="guo">
+                                        <h3>水果餐厅</h3>
+                                        <span>FRUIT RESTAURANT</span>
+                                        <h4>陆拾贰圆</h4>
+                                        <div class="wj">
+                                            <img src="img/1_20.png" alt="">
+                                        </div>
+                                        <p><span>62.00</span>&nbsp;RMB</p>
+                                    </div>
+                                    <div class="diz">
+                                        <div class="dw">
+                                            <img src="img/1_18.png" alt="">
+                                        </div>
+                                        <div class="ty">
+                                            <h5>太原小店区</h5>
+                                            <span>TAIYUANXIAODIAN</span>
+                                        </div>
+                                        <div class="pl">
+                                            <img src="img/1_21.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="conList">
+                                <div class="cl-tu">
+                                    <img src="img/1_10.png" alt="">
+                                </div>
+                                <div class="cl-con">
+                                    <div class="blackCir c1"></div>
+                                    <div class="blackCir c2"></div>
+                                    <div class="photo">
+                                        <img src="img/1_13.png" alt="">
+                                    </div>
+                                    <div class="tuxian"></div>
+                                    <div class="hot">
+                                        <img src="img/1_17.png" alt="">
+                                    </div>
+                                    <div class="guo">
+                                        <h3>水果餐厅</h3>
+                                        <span>FRUIT RESTAURANT</span>
+                                        <h4>陆拾贰圆</h4>
+                                        <div class="wj">
+                                            <img src="img/1_20.png" alt="">
+                                        </div>
+                                        <p><span>62.00</span>&nbsp;RMB</p>
+                                    </div>
+                                    <div class="diz">
+                                        <div class="dw">
+                                            <img src="img/1_18.png" alt="">
+                                        </div>
+                                        <div class="ty">
+                                            <h5>太原小店区</h5>
+                                            <span>TAIYUANXIAODIAN</span>
+                                        </div>
+                                        <div class="pl">
+                                            <img src="img/1_21.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="con1 con2">
+                            <li class="conList conList2">
+                                <div class="cl-tu">
+                                    <img src="img/1-39.png" alt="">
+                                </div>
+                                <div class="cl-con">
+                                    <div class="blackCir c1"></div>
+                                    <div class="blackCir c2"></div>
+                                    <div class="photo">
+                                        <img src="img/1_13.png" alt="">
+                                    </div>
+                                    <div class="tuxian"></div>
+                                    <div class="hot">
+                                        <img src="img/1_17.png" alt="">
+                                    </div>
+                                    <div class="guo">
+                                        <h3>水果餐厅</h3>
+                                        <span>FRUIT RESTAURANT</span>
+                                        <h4>陆拾贰圆</h4>
+                                        <div class="wj">
+                                            <img src="img/1_20.png" alt="">
+                                        </div>
+                                        <p><span>62.00</span>&nbsp;RMB</p>
+                                    </div>
+                                    <div class="diz">
+                                        <div class="dw">
+                                            <img src="img/1_18.png" alt="">
+                                        </div>
+                                        <div class="ty">
+                                            <h5>太原小店区</h5>
+                                            <span>TAIYUANXIAODIAN</span>
+                                        </div>
+                                        <div class="pl">
+                                            <img src="img/1_21.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="conList conList2">
+                                <div class="cl-tu">
+                                    <img src="img/1-42.png" alt="">
+                                </div>
+                                <div class="cl-con">
+                                    <div class="blackCir c1"></div>
+                                    <div class="blackCir c2"></div>
+                                    <div class="photo">
+                                        <img src="img/1_13.png" alt="">
+                                    </div>
+                                    <div class="tuxian"></div>
+                                    <div class="hot">
+                                        <img src="img/1_17.png" alt="">
+                                    </div>
+                                    <div class="guo">
+                                        <h3>水果餐厅</h3>
+                                        <span>FRUIT RESTAURANT</span>
+                                        <h4>陆拾贰圆</h4>
+                                        <div class="wj">
+                                            <img src="img/1_20.png" alt="">
+                                        </div>
+                                        <p><span>62.00</span>&nbsp;RMB</p>
+                                    </div>
+                                    <div class="diz">
+                                        <div class="dw">
+                                            <img src="img/1_18.png" alt="">
+                                        </div>
+                                        <div class="ty">
+                                            <h5>太原小店区</h5>
+                                            <span>TAIYUANXIAODIAN</span>
+                                        </div>
+                                        <div class="pl">
+                                            <img src="img/1_21.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="conList conList2">
+                                <div class="cl-tu">
+                                    <img src="img/1-45.png" alt="">
+                                </div>
+                                <div class="cl-con">
+                                    <div class="blackCir c1"></div>
+                                    <div class="blackCir c2"></div>
+                                    <div class="photo">
+                                        <img src="img/1_13.png" alt="">
+                                    </div>
+                                    <div class="tuxian"></div>
+                                    <div class="hot">
+                                        <img src="img/1_17.png" alt="">
+                                    </div>
+                                    <div class="guo">
+                                        <h3>水果餐厅</h3>
+                                        <span>FRUIT RESTAURANT</span>
+                                        <h4>陆拾贰圆</h4>
+                                        <div class="wj">
+                                            <img src="img/1_20.png" alt="">
+                                        </div>
+                                        <p><span>62.00</span>&nbsp;RMB</p>
+                                    </div>
+                                    <div class="diz">
+                                        <div class="dw">
+                                            <img src="img/1_18.png" alt="">
+                                        </div>
+                                        <div class="ty">
+                                            <h5>太原小店区</h5>
+                                            <span>TAIYUANXIAODIAN</span>
+                                        </div>
+                                        <div class="pl">
+                                            <img src="img/1_21.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="conList conList2">
+                                <div class="cl-tu">
+                                    <img src="img/1-44.png" alt="">
+                                </div>
+                                <div class="cl-con">
+                                    <div class="blackCir c1"></div>
+                                    <div class="blackCir c2"></div>
+                                    <div class="photo">
+                                        <img src="img/1_13.png" alt="">
+                                    </div>
+                                    <div class="tuxian"></div>
+                                    <div class="hot">
+                                        <img src="img/1_17.png" alt="">
+                                    </div>
+                                    <div class="guo">
+                                        <h3>水果餐厅</h3>
+                                        <span>FRUIT RESTAURANT</span>
+                                        <h4>陆拾贰圆</h4>
+                                        <div class="wj">
+                                            <img src="img/1_20.png" alt="">
+                                        </div>
+                                        <p><span>62.00</span>&nbsp;RMB</p>
+                                    </div>
+                                    <div class="diz">
+                                        <div class="dw">
+                                            <img src="img/1_18.png" alt="">
+                                        </div>
+                                        <div class="ty">
+                                            <h5>太原小店区</h5>
+                                            <span>TAIYUANXIAODIAN</span>
+                                        </div>
+                                        <div class="pl">
+                                            <img src="img/1_21.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--清单结束-->
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--底部开始-->
+<ul class="foot">
+    <li>
+        <a href="index.html">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir active">
+                <img src="img/g-25.png" alt="">
+            </div>
+            <h3>首页</h3>
+        </a>
+    </li>
+    <li>
+        <a href="phb.html">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir">
+                <img src="img/g-26.png" alt="">
+            </div>
+            <h3>排行榜</h3>
+        </a>
+    </li>
+    <li>
+        <a href="faxian.html">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir">
+                <img src="img/g-27.png" alt="">
+            </div>
+            <h3>发现</h3>
+        </a>
+    </li>
+    <li>
+        <a href="person.html">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir">
+                <img src="img/g-28.png" alt="">
+            </div>
+            <h3>我的</h3>
+        </a>
+    </li>
+</ul>
+<!--底部结束-->
+</body>
+</html>

@@ -1,0 +1,140 @@
+.clear{
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+/*百度地图*/
+body, html,#allmap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin:0;
+    font-family:"微软雅黑";
+}
+/*动画*/
+@keyframes bling{
+    from{transform:scale(0.9);}
+    to{transform:scale(1.2)}
+}
+.donghua{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at center,#f11e1e 1%,#e34444 24%, #eb3e3e 25%,#dd5151 49%, #e15757 50%, #d36363 100%);
+    animation: bling 2s infinite;
+    position: absolute;
+    left:0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    margin: auto;
+}
+.mark{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    left:0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    margin: auto;
+}
+/*导航开始*/
+.list{
+    width:7rem;
+    height: 0.77rem;
+    background: #fff;
+    position: fixed;
+    left:0.25rem;
+    top:1rem;
+    padding: 0.18rem 0.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.list li{
+    float: left;
+}
+.list li .listT{
+    width: 0.4rem;
+    height: 0.4rem;
+    float: left;
+}
+.list li .listC{
+    width: 1.13rem;
+    height: 0.04rem;
+    padding: 0.01rem 0;
+    float: left;
+    margin-left: 0.1rem;
+}
+.list li .listT img{
+    width: 0.4rem;
+    height: 0.4rem;
+    display: block;
+}
+.list li h4{
+    color: #707070;
+    font-size: 0.23rem;
+    line-height: 0.2rem;
+}
+.list li span{
+    color: #707070;
+    font-size: 0.1rem;
+    word-spacing: -0.05rem;
+    display: block;
+    margin: 0;
+}
+
+/*导航结束*/
+/*头部开始*/
+header{
+    width: 100%;
+    height: 1rem;
+    background: #ec1515;
+    padding: 0 0.25rem;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 5;
+}
+.lf-left,.lf-right{
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-top: 0.3rem;
+}
+.lf-left{
+    float: left;
+}
+.lf-left img{
+    width: 0.4rem;
+    height: 0.4rem;
+    display:block;
+}
+.lf-right{
+    float: right;
+}
+.lf-right img{
+    width: 0.4rem;
+    height: 0.4rem;
+    display:block;
+}
+.lf-title{
+    width: 2.56rem;
+    height: 100%;
+    float: left;
+    margin-left: 1.85rem;
+}
+.lf-title h6 {
+    font-size: 0.28rem;
+    color:#fff;
+    text-align: center;
+    line-height: 0.6rem;
+}
+.lf-title img{
+    width: 2.56rem;
+    height: 0.2rem;
+    display: block;
+}
+/*头部结束*/

@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/rem.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+
+        var myScroll;
+
+        function loaded () {
+            myScroll = new IScroll('#wrapper', {
+                bounceEasing: 'elastic',
+                bounceTime: 1200,
+                click:true,
+            });
+        }
+
+//        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
+//            capture: false,
+//            passive: false
+//        } : false);
+
+    </script>
+
+
+
+    <style>
+        *{
+            touch-action: none;
+        }
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 100%;
+            background: #fff;
+            opacity: .2;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #a3a3a4;
+        }
+        .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+            bottom: 80px;
+            left: 0;
+            width: 100%;
+        }
+
+
+
+        #wrapper {
+            position: absolute;
+            z-index: 1;
+            top: 1rem;
+            bottom: 1rem;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #scroller {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            transform: translateZ(0);
+            user-select: none;
+            text-size-adjust: none;
+        }
+    </style>
+
+</head>
+<body onload="loaded()">
+<!--头部开始-->
+<header>
+    <div class="lf-left">
+        <a href="map.html">
+            <img src="img/1-11.png" alt="">
+        </a>
+    </div>
+    <div class="lf-title">
+        <h6>首页</h6>
+        <img src="img/1-1.png" alt="">
+    </div>
+    <div class="lf-right">
+        <a href="search.html">
+            <img src="img/1-12.png" alt="">
+        </a>
+    </div>
+</header>
+<!--头部结束-->
+
+<div id="wrapper">
+    <div id="scroller" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+        <ul>
+            <!--banner开始-->
+            <li>
+                <div class="swiper-container lf-banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/1-49.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/1-50.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/1-51.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </li>
+            <!--banner结束-->
+            <li>
+                <!--模块开始-->
+                <div class="lf-neikuan">
+                    <ul class="lf-mok">
+                        <div class="yellow"></div>
+                        <li>
+                            <a href="canting.html" class="tiao">
+                                <img src="img/1-5.png" alt="">
+                            </a>
+                            <p>餐厅推荐</p>
+                            <span>RESTAURANT</span>
+                        </li>
+                        <li>
+                            <img src="img/1-6.png" alt="">
+                            <p>做法推荐</p>
+                            <span>PRACTICE</span>
+                        </li>
+                        <li>
+                            <img src="img/1-7.png" alt="">
+                            <p>新奇推荐</p>
+                            <span>COLLOCATION</span>
+                        </li>
+                        <li>
+                            <img src="img/1-8.png" alt="">
+                            <p>新奇做法</p>
+                            <span>NOVELPRACT</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--模块结束-->
+            </li>
+            <li>
+                <!--推荐开始-->
+                <div class="lf-neikuan">
+                    <div class="lf-tj">
+                        <div class="s-tu">
+                            <img src="img/1-3.png" alt="">
+                        </div>
+                        <div class="z-tu">
+                            <img src="img/1-4.png" alt="">
+                        </div>
+                        <div class="x-xian"></div>
+                        <ul class="nice">
+                            <li>
+                                <div class="nice-stu">
+                                    <img src="img/ff-4_03.png" alt="" class="nice-stu1">
+                                    <div class="nice-mk">
+                                        <img src="img/1-9.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="nice-scon">
+                                    <h4>密雪冰城</h4>
+                                    <img src="img/1-10.png" alt="">
+                                    <div class="redBtn">HOT</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nice-stu">
+                                    <img src="img/ff-1_03.png" alt="" class="nice-stu1">
+                                    <div class="nice-mk">
+                                        <img src="img/1-9.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="nice-scon">
+                                    <h4>陈氏海鲜</h4>
+                                    <img src="img/1-10.png" alt="">
+                                    <div class="redBtn">HOT</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nice-stu">
+                                    <img src="img/ff-6_03.png" alt="" class="nice-stu1">
+                                    <div class="nice-mk">
+                                        <img src="img/1-9.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="nice-scon">
+                                    <h4>菲力牛排</h4>
+                                    <img src="img/1-10.png" alt="">
+                                    <div class="redBtn">HOT</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--推荐结束-->
+            </li>
+            <li>
+                <!--推荐2开始-->
+                <div class="lf-neikuan">
+                    <div class="lf-tj lf-tj2">
+                        <div class="s-tu">
+                            <img src="img/1-3.png" alt="">
+                        </div>
+                        <div class="z-tu">
+                            <img src="img/1-4.png" alt="">
+                        </div>
+                        <div class="x-xian"></div>
+                        <!--第一组-->
+                        <div class="photo clear">
+                            <div class="photo-z">
+                                <img src="img/1-13.png" alt="">
+                            </div>
+                            <div class="photo-zz">
+                                <h5>Lin Green</h5>
+                                <img src="img/1-20.png" alt="">
+                                <p>如果你只是吃货而已</p>
+                            </div>
+                            <div class="photo-y">
+                                <img src="img/1-15.png" alt="" class="xing">
+                                <div class="photo-yx clear">
+                                    <div class="zan">
+                                        <img src="img/1-16.png" alt="">
+                                        <span>2790</span>
+                                    </div>
+                                    <div class="zan">
+                                        <img src="img/1-16.png" alt="">
+                                        <span>2790</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lf-tj2Con lf-tj2Con1">
+                            <div class="conTu">
+                                <img src="img/1-18.png" alt="">
+                            </div>
+                            <div class="con">
+                                <h3>DISCOVER GOURMET</h3>
+                                <div class="huix"></div>
+                                <p>米其林星级是有一批经过筛选的他们被称...</p>
+                                <h3 class="price">678.00 <span>RMB</span></h3>
+                                <div class="shop">
+                                    <img src="img/1-21.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ti2-xian"></div>
+                            <div class="time">
+                                <div class="blackCir blackCir1"></div>
+                                <div class="blackCir blackCir2"></div>
+                                <div class="todo">
+                                    <img src="img/1-22.png" alt="">
+                                    <span>10.20.2016</span>
+                                </div>
+                                <div class="todo todo2">
+                                    <img src="img/1-23.png" alt="">
+                                    <span>8:AM-10:PM</span>
+                                </div>
+                                <div class="todo todo3">
+                                    <img src="img/1-23.png" alt="">
+                                    <span>SHANXI.TAIYUAN</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--第二组-->
+                        <div class="photo photo2 clear">
+                            <div class="photo-z">
+                                <img src="img/1-14.png" alt="">
+                            </div>
+                            <div class="photo-zz">
+                                <h5>Hen Green</h5>
+                                <img src="img/1-20.png" alt="">
+                                <p>随时随地发现美食</p>
+                            </div>
+                            <div class="photo-y">
+                                <img src="img/1-15.png" alt="" class="xing">
+                                <div class="photo-yx clear">
+                                    <div class="zan">
+                                        <img src="img/1-16.png" alt="">
+                                        <span>2790</span>
+                                    </div>
+                                    <div class="zan">
+                                        <img src="img/1-16.png" alt="">
+                                        <span>2790</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lf-tj2Con lf-tj2Con2">
+                            <div class="conTu">
+                                <img src="img/1-19.png" alt="">
+                            </div>
+                            <div class="con">
+                                <h3>DISCOVER GOURMET</h3>
+                                <div class="huix"></div>
+                                <p>米其林星级是有一批经过筛选的他们被称...</p>
+                                <h3 class="price">678.00 <span>RMB</span></h3>
+                                <div class="shop">
+                                    <img src="img/1-21.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ti2-xian"></div>
+                            <div class="time">
+                                <div class="blackCir blackCir1"></div>
+                                <div class="blackCir blackCir2"></div>
+                                <div class="todo">
+                                    <img src="img/1-22.png" alt="">
+                                    <span>10.20.2016</span>
+                                </div>
+                                <div class="todo todo2">
+                                    <img src="img/1-23.png" alt="">
+                                    <span>8:AM-10:PM</span>
+                                </div>
+                                <div class="todo todo3">
+                                    <img src="img/1-23.png" alt="">
+                                    <span>SHANXI.TAIYUAN</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--推荐2结束-->
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+<!--底部开始-->
+<ul class="foot">
+    <li>
+        <a href="###">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir active">
+                <img src="img/g-25.png" alt="">
+            </div>
+            <h3>首页</h3>
+        </a>
+    </li>
+    <li>
+        <a href="phb.html">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir">
+                <img src="img/g-26.png" alt="">
+            </div>
+            <h3>排行榜</h3>
+        </a>
+    </li>
+    <li>
+        <a href="faxian.html">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir">
+                <img src="img/g-27.png" alt="">
+            </div>
+            <h3>发现</h3>
+        </a>
+    </li>
+    <li>
+        <a href="person.html">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir">
+                <img src="img/g-28.png" alt="">
+            </div>
+            <h3>我的</h3>
+        </a>
+    </li>
+</ul>
+<!--底部结束-->
+
+
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+
+
+
+
+</script>
+
+</body>
+</html>

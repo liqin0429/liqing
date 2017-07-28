@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/person.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <script src="js/rem.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded () {
+            myScroll = new IScroll('#wrapper', {
+                bounceEasing: 'elastic',
+                bounceTime: 1200,
+                click:true,
+            });
+        }
+    </script>
+    <style>
+        *{
+            touch-action: none;
+        }
+        #wrapper {
+            position: absolute;
+            z-index: 1;
+            top: 4.2rem;
+            bottom: 1rem;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #scroller {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            transform: translateZ(0);
+            user-select: none;
+            text-size-adjust: none;
+        }
+    </style>
+</head>
+<body onload="loaded()">
+<!--开头-->
+<header>
+    <i class="icon-memu"></i>
+    <i class="icon-set"></i>
+</header>
+<div class="top">
+    <div class="top-head-wai">
+        <div class="top-head">
+            <a href=""><img src="" alt=""></a>
+        </div>
+    </div>
+    <div class="top-title">
+        <h2 class="title-one">NICOLAS CAGE</h2>
+        <span class="tilte-two">尼古拉斯</span>
+        <div class="starbox">
+            <div class="star">
+                <img src="img/3-star.png" alt="">
+            </div>
+            <div class="star">
+                <img src="img/3-star.png" alt="">
+            </div>
+            <div class="star">
+                <img src="img/3-star.png" alt="">
+            </div>
+            <div class="star">
+                <img src="img/3-star.png" alt="">
+            </div>
+            <div class="star">
+                <img src="img/3-star.png" alt="">
+            </div>
+        </div>
+        <span class="title-three">尼古拉斯尼古拉尼可拉斯见的</span>
+    </div>
+</div>
+<div id="wrapper">
+    <div id="scroller"
+         style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+        <ul>
+            <li>
+                <!--中间内容-->
+                <div class="content">
+                    <!--选项标题-->
+                    <div class="con-top">
+                        <div class="con-category">
+                            <div class="category">
+                                <div class="icon">
+                                    <i class="icon-follow"></i>
+                                </div>
+                                <div class="con-text">
+                                    <h3 class="follow-title">关注</h3>
+                                    <span>1314</span>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="icon">
+                                    <i class="icon-follow"></i>
+                                </div>
+                                <div class="con-text">
+                                    <h3 class="follow-title">动态</h3>
+                                    <span>1314</span>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="icon">
+                                    <i class="icon-follow"></i>
+                                </div>
+                                <div class="con-text">
+                                    <h3 class="follow-title">粉丝</h3>
+                                    <span>1245</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--选项-->
+                    <div class="con-option">
+                        <ul>
+                            <li>
+                                <div class="icon-icon2">
+                                    <i></i>
+                                </div>
+                                <a href="">我的订单</a>
+                                <div class="con-option-right">
+                                    <span>3</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-icon2">
+                                    <i></i>
+                                </div>
+                                <a href="">我的钱包</a>
+                                <div class="con-option-right">
+                                    <span>1</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-icon2">
+                                    <i></i>
+                                </div>
+                                <a href="">我的余额</a>
+                                <div class="con-option-right">
+                                    <span>￥0.00</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-icon2">
+                                    <i></i>
+                                </div>
+                                <a href="">抵用券</a>
+                                <div class="con-option-right">
+                                    <span>2</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-icon2">
+                                    <i></i>
+                                </div>
+                                <a href="">会员卡</a>
+                                <div class="con-option-right">
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-icon2">
+                                    <i></i>
+                                </div>
+                                <a href="">我的收藏</a>
+                                <div class="con-option-right">
+                                    <span>4</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-icon2">
+                                    <i></i>
+                                </div>
+                                <a href="">会员中心</a>
+                                <div class="con-option-right">
+                                    <span></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!--底部开始-->
+<ul class="foot">
+    <li>
+        <a href=" ">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir active">
+                <img src="img/g-25.png" alt="">
+            </div>
+            <h3>首页</h3>
+        </a>
+    </li>
+    <li>
+        <a href="phb.html">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir">
+                <img src="img/g-25.png" alt="">
+            </div>
+            <h3>排行榜</h3>
+        </a>
+    </li>
+    <li>
+        <a href="###">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir">
+                <img src="img/g-27.png" alt="">
+            </div>
+            <h3>发现</h3>
+        </a>
+    </li>
+    <li>
+        <a href="###">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir">
+                <img src="img/g-28.png" alt="">
+            </div>
+            <h3>我的</h3>
+        </a>
+    </li>
+</ul>
+<!--底部结束-->
+</body>
+</html>

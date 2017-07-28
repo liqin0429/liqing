@@ -1,0 +1,407 @@
+clear:after{
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+body{
+    font-size: 0.28rem;
+    font-family: "苹方";
+    background-color: #1c1616;
+}
+.neikuan {
+    width: 7rem;
+    margin: 0 auto;
+}
+
+/*header开始*/
+header{
+    width: 100%;
+    height: 1rem;
+    background: #ec1515;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+header .neikuan {
+    position: relative;
+}
+header .zi{
+    width: 1.5rem;
+    height: 1rem;
+    padding-top: 0.27rem;
+    margin: auto;
+}
+header .zi h1{
+    font-size: 0.28rem;
+    text-align: center;
+    color: #fff;
+}
+header .zi img{
+    width: 1.5rem;
+    height: 0.18rem;
+    vertical-align: top;
+}
+header .back{
+    width: 0.45rem;
+    height: 0.48rem;
+    position: absolute;
+    left: 0;
+    top: 0.3rem;
+}
+header .back img{
+    width: 0.45rem;
+    height: 0.48rem;
+}
+/*动态开始*/
+.dt{
+    width: 100%;
+    margin-top: 1.3rem;
+}
+.dtbox{
+    height: 1.17rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    padding-top: 0.21rem;
+    padding-left: 0.37rem;
+}
+.dtbox .tu1{
+    float: left;
+}
+.dtbox .tu1 img{
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0.1rem;
+}
+.dtbox .zi{
+    float: left;
+    width: 1.56rem;
+    height: 100%;
+    padding-top: 0.22rem;
+    margin-left: 0.22rem;
+}
+.dtbox .zi span{
+    font-size: 0.28rem;
+    color: #fe0e0e;
+    line-height: 0.28rem;
+    float: left;
+}
+.dtbox .zi .yuan{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    background: #fe0e0e;
+    text-align: center;
+    line-height: 0.3rem;
+    font-size: 0.16rem;
+    color: #fff;
+    border-radius: 50%;
+    float: right;
+}
+.dtbox .tu2{
+    float: right;
+    margin-right: 0.54rem;
+}
+.dtbox .tu2 img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+/*附近美食开始*/
+.food .title{
+    width: 100%;
+    height: 1.11rem;
+    text-align: center;
+    padding-top: 20px;
+}
+.food .title img{
+    width: 3.91rem;
+    height: 0.72rem;
+}
+.food .con{
+    display: flex;
+    justify-content: space-between;
+}
+.food .con li{
+    width: 2.24rem;
+    height: 3.3rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    position: relative;
+}
+.food .con li .bj{
+    height: 1.73rem;
+}
+.food .con li .bj img{
+    width: 2.24rem;
+    height: 1.73rem;
+}
+.food .con li .message{
+    position: relative;
+    height: 1.57rem;
+}
+.food .con li .photo{
+    width: 0.43rem;
+    height: 0.41rem;
+    position: absolute;
+    left: 0.17rem;
+    top: -0.16rem;
+}
+.food .con li .photo img{
+    width: 0.43rem;
+    height: 0.41rem;
+}
+.food .con li .message .xian{
+    width: 2.19rem;
+    height: 0.01rem;
+    background-color: #c5c5c6;
+    float: left;
+    margin: 0.28rem 0 0 0.02rem;
+}
+.food .con li .message .price{
+    width: 100%;
+    height: 0.72rem;
+    position: relative;
+    padding-left: 0.14rem;
+    padding-top: 0.04rem;
+    float: left;
+}
+.food .con h1{
+    font-size: 0.23rem;
+    line-height: 0.23rem;
+    color: #ec1515;
+}
+.food .con h2{
+    font-size: 0.1rem;
+    line-height: 0.1rem;
+}
+.food .con h3{
+    font-size: 0.14rem;
+    line-height: 0.14rem;
+    color: #ec1515;
+    margin-top: 0.1rem;
+}
+.food .con h4{
+    font-size: 0.07rem;
+    line-height: 0.07rem;
+    margin-top: 0.05rem;
+}
+.food .con h4 span{
+    color: #ec1515;
+}
+.food .con .wj{
+    position: absolute;
+    left: 0.8rem;
+    top: 0.3rem;
+}
+.food .con .wj img{
+    width: 0.76rem;
+    height: 0.12rem;
+}
+.food .con .hot{
+    position: absolute;
+    right: 0.17rem;
+    top: -0.04rem;
+}
+.food .con .hot img{
+    width: 0.43rem;
+    height: 0.45rem;
+}
+.food .con .dizhi{
+    width: 100%;
+    padding-top: 0.14rem;
+    padding-left: 0.14rem;
+    float: left;
+    position: relative;
+}
+.food .dizhi .tu1{
+    float: left;
+    margin-left: -0.06rem;
+}
+.food .dizhi .tu1 img{
+    width: 0.3rem;
+    height: 0.3rem;
+}
+.food .dizhi .zi{
+    float: left;
+}
+.food .dizhi .zi h1{
+    font-size: 0.09rem;
+    line-height: 0.15rem;
+    margin-top: 0.02rem;
+}
+.food .dizhi .zi h2{
+    font-size: 0.06rem;
+}
+.food .dizhi .jia{
+    width: 1.04rem;
+    height: 0.27rem;
+}
+.food .dizhi .jia img{
+    width: 1.04rem;
+    height: 0.27rem;
+}
+.food .dizhi .jia{
+    position: absolute;
+    right: 0;
+    top: 0.14rem;
+}
+.food .rect{
+    width: 0.12rem;
+    height: 0.12rem;
+    border-radius: 50%;
+    background-color: #1c1616;
+    position: absolute;
+    top: 1.66rem;
+}
+.food .rect1{
+    left: -0.05rem;
+}
+.food .rect2{
+    right: -0.05rem;
+}
+/*附近人开始*/
+.people .title {
+    width: 100%;
+    height: 1.11rem;
+    text-align: center;
+    padding-top: 20px;
+}
+.people .title img {
+    width: 3.91rem;
+    height: 0.72rem;
+}
+.people li{
+    width: 100%;
+    height: 0.83rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    margin-bottom: 0.1rem;
+    position: relative;
+}
+.people li .tu1{
+    width: 0.69rem;
+    height: 0.83rem;
+    padding-top: 0.14rem;
+    padding-left: 0.09rem;
+    float: left;
+}
+.people li .tu1 img{
+    width: 0.55rem;
+    height: 0.54rem;
+ }
+.people li .zi{
+    width: 2.78rem;
+    padding-top: 0.2rem;
+    float: left;
+    position: relative;
+}
+.people li .zi h1{
+    font-size: 0.12rem;
+    color: #7f7f7f;
+    letter-spacing: 0.03rem;
+}
+.people li .zi .xian{
+    width: 1.06rem;
+    height: 0.01rem;
+    background: #d4d4d4;
+    border-bottom: 0.01rem solid #f2f2f2;
+}
+.people li .zi h2{
+    font-size: 0.23rem;
+    color: #9d9d9d;
+}
+.people li .zi img{
+    position: absolute;
+    width: 0.68rem;
+    height: 0.16rem;
+    left: 1.4rem;
+    top: 0.22rem;
+}
+.people li .video{
+    position: absolute;
+    right: 1.82rem;
+    top: 0.26rem;
+}
+.people li .video img{
+    width: 0.94rem;
+    height: 0.3rem;
+}
+.people li .phone{
+    position: absolute;
+    right: 1.38rem;
+    top: 0.26rem;
+}
+.people li .phone img{
+    width: 0.2rem;
+    height: 0.32rem;
+}
+.people .con{
+    margin-bottom: 1.1rem;
+}
+/*底部开始*/
+.foot{
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+.foot li{
+    width: 25%;
+    height: 100%;
+    background:#ec1515;
+    padding-top: 0.1rem;
+    float: left;
+    position: relative;
+}
+.foot li a{
+    display: block;
+}
+.foot li .yinyin{
+    width: 0.14rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.foot li .cir{
+    width: 0.62rem;
+    height: 0.62rem;
+    background: #f33e34;
+    border: 0.01rem solid#fd352b;
+    border-radius: 50%;
+    margin: auto;
+}
+.foot li .active{
+    background: #dd1616;
+}
+.foot li .cir img{
+    display: block;
+    width: 0.37rem;
+    height: 0.37rem;
+    margin: 0.1rem auto;
+}
+.foot li h3{
+    font-size: 0.17rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.03rem;
+}
+/*底部结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

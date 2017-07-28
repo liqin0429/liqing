@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 微软雅黑;
+}
+body{
+    background: url("../img/3-pay-backdrop.png") no-repeat;
+    background-size: cover;
+}
+header{
+    width:100%;
+    height:0.88rem;
+    background: #ec1515;
+}
+.return{
+    width:0.45rem;
+    height:0.46rem;
+    display: block;
+    background: url("../img/3-fanhui.png") no-repeat;
+    background-size: cover;
+    margin-left:0.24rem;
+    margin-top: 0.3rem;
+    float: left;
+}
+.head-title{
+    font-size: 0.3rem;
+    color:#fff;
+    /*text-align: center;*/
+    line-height: 0.4rem;
+    text-indent:2.45rem;
+    padding-top:0.3rem;
+}
+.fu-title{
+    display: block;
+    width:3.4rem;
+    height:0.17rem;
+    background: url("../img/3-pay-title.png") no-repeat;
+    background-size: cover;
+    margin:auto;
+    z-index:22;
+    margin-top:0.06rem;
+}
+section{
+    width:6.26rem;
+    height:8.11rem;
+    /*background: yellow;*/
+    padding-top:0.42rem;
+    margin:auto;
+    margin-bottom: 0.55rem;
+}
+.contentbox{
+    width:6.26rem;
+    height:7.7rem;
+    background: #ffc320;
+    border-radius: 0.13rem;
+    box-shadow: 0 0 0.35rem 0 #a9a9a9;
+    overflow: hidden;
+}
+.con-baikaui{
+    width:100%;
+    height:7.59rem;
+    background: #fff;
+}
+.pay-namebox{
+    width:100%;
+    height:1.86rem;
+    /*background: green;*/
+    padding-top:0.3rem;
+}
+.pay-classify{
+    width:100%;
+    height:5.73rem;
+    /*background: pink;*/
+    padding-top: 0.37rem;
+}
+.pay-namebox-xiaobox{
+    width:100%;
+    height:1.12rem;
+    /*background: red;*/
+    margin-top:0.43rem;
+}
+.pay-namebox-photo{
+    width:2.63rem;
+    height:100%;
+    /*background: yellow;*/
+    float: left;
+    text-align: center;
+    line-height: 1.12rem;
+}
+.pay-namebox-title{
+    width:3.63rem;
+    height:100%;
+    /*background: yellowgreen;*/
+    float: left;
+    /*text-align: center;*/
+    /*line-height: 1.12rem;*/
+}
+.img{
+    width:0.9rem;
+    height:0.9rem;
+    border-radius: 50%;
+    background: red;
+    float: right;
+    margin:11px 17px 11px 0;
+}
+.img img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.pay-namebox-money{
+    display: block;
+    font-size: 0.26rem;
+    color:#777777;
+    font-weight: bold;
+    padding-top:0.26rem;
+    /*padding-bottom:0.48rem;*/
+}
+.hengxian{
+    display: block;
+    width:1.58rem;
+    height:0.01rem;
+    background: #9c9b9b;
+    margin-left:0.06rem;
+}
+.hengxian2{
+    display: block;
+    width:1.82rem;
+    height:0.01rem;
+    background: #9c9b9b;
+    margin-left:0.06rem;
+}
+.title{
+    font-size: 0.17rem;
+    color: #777777;
+    margin-left:0.06rem;
+    padding-top:0.06rem;
+    padding-bottom:0.05rem;
+}
+.pay-classify-first{
+    width:4.87rem;
+    height:0.82rem;
+    /*background: yellow;*/
+    margin:0 auto;
+    border-radius: 0.07rem;
+    border:1px solid #dddddd;
+    margin-bottom:0.18rem;
+    position: relative;
+}
+.pay-classify-first:hover{
+    box-shadow: 2px 2px 5px 0px #cacaca;
+}
+.pay-classify-first-left{
+    width: 1.07rem;
+    height:100%;
+    float: left;
+    padding-top:0.14rem;
+    padding-bottom:0.16rem;
+}
+.pay-icon{
+    display: block;
+    width:0.5rem;
+    height:0.5rem;
+    background: url("../img/3-pay-icon.png")no-repeat;
+    background-size: cover;
+    margin-left:0.21rem;
+}
+.juti{
+    display: block;
+    width:0.26em;
+    height:0.26rem;
+    background: #ffc320;
+    border-radius: 50%;
+    position: absolute;
+    top:0.3rem;
+    right:0.11rem;
+}
+.more{
+    color: #fff;
+    font-size: 0.13rem;
+    position: absolute;
+    top: 0.04rem;
+    right: 0.08rem;
+}
+.paycon2{
+    background: url("../img/3-qianbao.png")no-repeat;
+    background-size: cover;
+}
+.paycon3{
+    background: url("../img/3-weixin.png")no-repeat;
+    background-size: cover;
+}
+.paycon4{
+    background: url("../img/3-zhifubao.png")no-repeat;
+    background-size: cover;
+}
+.pay-classify-first-right{
+    width:3.78rem;
+    height:100%;
+    /*background: gold;*/
+    float: right;
+}
+.back{
+    font-size: 0.23rem;
+    color:#6d6d6d;
+    font-weight: bold;
+    margin-top:0.19rem;
+    margin-bottom:0.05rem;
+}
+.english{
+    display: block;
+    font-size: 0.12rem;
+    color:#6d6d6d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 底部*/
+footer{
+    width:100%;
+    height:1.68rem;
+    /*background: blue;*/
+    padding:0.51rem 0.67rem 0.15rem 0.69rem
+}
+.enter-payBtn{
+    width:100%;
+    height:1.02rem;
+    margin:0;
+    padding:0;
+    background: no-repeat;
+    border:0;
+    border-style: none;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.enter-pay{
+    width:100%;
+    height:100%;
+    background: #f12c22;
+    border-radius: 0.1rem;
+    position: relative;
+}
+.enter-pay-left{
+    width:2.93rem;
+    height:100%;
+    padding-right:0.06rem;
+    text-align: right;
+    line-height: 1.02rem;
+    float: left;
+}
+.enter-pay-fight{
+    width:3.2rem;
+    height:100%;
+    text-align: left;
+    line-height: 1.02rem;
+    float: left;
+}
+.pay-text{
+    display: block;
+    font-size: 0.22rem;
+    color:#fff;
+    padding-right:0.06rem;
+}
+.pay-text2{
+    display: block;
+    font-size: 0.22rem;
+    color:#fff;
+    /*padding-right:0.06rem;*/
+}
+.formbbox{
+    width:100%;
+    height:1.02rem;
+}

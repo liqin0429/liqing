@@ -1,0 +1,408 @@
+.clear{
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+/*头部开始*/
+body{
+    font-family: 微软雅黑;
+    background: #292424;
+}
+header{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background: #ec1515;
+    padding: 0 0.25rem;
+}
+.lf-left,.lf-right{
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-top: 0.3rem;
+}
+.lf-left{
+    float: left;
+}
+.lf-left img{
+    width: 0.4rem;
+    height: 0.4rem;
+    display:block;
+}
+.lf-right{
+    float: right;
+}
+.lf-right img{
+    width: 0.4rem;
+    height: 0.4rem;
+    display:block;
+}
+.lf-title{
+    width: 2.56rem;
+    height: 100%;
+    float: left;
+    margin-left: 1.85rem;
+}
+.lf-title h6 {
+    font-size: 0.28rem;
+    color:#fff;
+    text-align: center;
+    line-height: 0.6rem;
+}
+.lf-title img{
+    width: 2.56rem;
+    height: 0.2rem;
+    display: block;
+}
+/*头部结束*/
+
+/*banner开始*/
+.lf-banner{
+    width: 100%;
+    height: 4.1rem;
+    position: relative;
+}
+.lf-banner img{
+    width: 100%;
+    height: 4.1rem;
+}
+/*banner结束*/
+/*榜单开始*/
+.lf-neikuan{
+    width: 7rem;
+    height: auto;
+    margin: 0 auto;
+}
+.lf-bang{
+    width: 100%;
+    height: 1.85rem;
+    padding: 0.79rem 0.55rem 0.3rem;
+    position: relative;
+}
+.lf-bang .yellow{
+    width: 7rem;
+    height: 0.03rem;
+    border-radius: 15px;
+    background: #ffe617;
+    position: absolute;
+    left:0;
+    right: 0;
+    top:-0.03rem;
+    margin: auto;
+    z-index: 10;
+}
+.lf-bang .bangList{
+    width: 5.9rem;
+    height: 0.76rem;
+    background: #3f3e3e;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.lf-bang .bangList li{
+    width: 1.7rem;
+    height: 0.55rem;
+    background: #3f3e3e;
+    border-radius: 0.5rem;
+    position: relative;
+}
+.lf-bang .bangList li img{
+    width:  0.03rem;
+    height:0.44rem;
+    position: absolute;
+    right: -0.15rem;
+    top:0.05rem;
+}
+/*.lf-bang .bangList li.act{*/
+    /*background: #f12c22;*/
+/*}*/
+.lf-bang .bangList li h3{
+    color: #fff;
+    text-align: center;
+    font-size: 0.22rem;
+    line-height: 0.35rem;
+}
+.lf-bang .bangList li span{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 0.1rem;
+    display: block;
+}
+/*榜单结束*/
+/*榜清单开始*/
+.lf-bangL{
+    width:100%;
+    height: 1.44rem;
+    background: #fff;
+    border-radius: 0.15rem;
+    margin-bottom: 0.24rem;
+}
+.bangR{
+    /*width: 100%;*/
+    /*height: 3.21rem;*/
+    position: relative;
+}
+.bang{
+    width: 100%;
+    /*height: 3.21rem;*/
+    position: absolute;
+    left:0;
+    top:0;
+    display: none;
+}
+.lf-bangL .z-tu{
+    width: 1.88rem;
+    height: 1.44rem;
+    float: left;
+    margin-right: 0.47rem;
+}
+.lf-bangL .z-tu img{
+    width: 1.88rem;
+    height: 1.44rem;
+}
+.lf-bangL .y-zi{
+    width: 4.45rem;
+    height: 100%;
+    float: left;
+}
+.lf-bangL .y-zi .y-ziS{
+    width: 100%;
+    height: 0.4rem;
+    float: left;
+}
+.lf-bangL .y-zi .y-ziS h3{
+    color: #f31515;
+    font-size: 0.28rem;
+    float: left;
+    line-height: 0.45rem;
+}
+.lf-bangL .y-zi .y-ziS span{
+    color: #bcbcbc;
+    font-size: 0.14rem;
+    display: block;
+    float: right;
+}
+.lf-bangL .y-zi h5{
+    color: #f31515;
+    font-size: 0.18rem;
+    float: left;
+    font-weight:700;
+}
+.lf-bangL .y-zi p{
+    color: #7b7b7b;
+    font-size: 0.22rem;
+    float: left;
+    margin: 0;
+}
+.y-zi .haop{
+    width: 100%;
+    height: 0.2rem;
+    float: left;
+    padding: 0.03rem 0 0.03rem 2.5rem;
+}
+.y-zi .haop .yTime{
+    width: 0.16rem;
+    height: 0.16rem;
+    background: #f8490c;
+    border-radius: 50%;
+    float: left;
+}
+.y-zi .haop span{
+    font-size: 0.12rem;
+    color:#bcbcbc;
+    line-height: 0.2rem;
+    display: block;
+    float: left;
+    margin: 0 0.2rem 0 0.1rem;
+}
+.lf-more{
+    width: 1.34rem;
+    height: 0.42rem;
+    background: #3f3e3e;
+    border-radius: 0.5rem;
+    float: right;
+    color: #fff;
+    text-align: center;
+    line-height: 0.42rem;
+    font-size: 0.21rem;
+    letter-spacing: 0.01rem;
+    margin-top: 5.2rem;
+}
+/*榜清单结束*/
+/*今日推荐开始*/
+.lf-tit{
+    width: 100%;
+    height: 0.8rem;
+    /*margin-top: 1.17rem;*/
+    margin-top: 5.7rem;
+}
+.lf-tit img{
+    width: 3.85rem;
+    height: 0.54rem;
+    display: block;
+    margin: 0.47rem auto;
+}
+.lf-huoguo{
+    width: 100%;
+    height: 2.8rem;
+    background:#fff;
+    border-radius: 0.15rem;
+    margin-bottom: 0.28rem;
+    position: relative;
+}
+.lf-huoguo1{
+    margin-bottom: 0.7rem;
+}
+.lf-huoguo .news{
+    width:0.9rem;
+    height: 0.9rem;
+    position: absolute;
+    right: 0.41rem;
+    top:-0.23rem;
+}
+.lf-huoguo .news img{
+    width:0.9rem;
+    height: 0.9rem;
+}
+.lf-huoguo .hg-z{
+    width: 1.72rem;
+    height: 100%;
+    float: left;
+    margin-right: 0.13rem;
+}
+.lf-huoguo .hg-z img{
+    width: 1.72rem;
+    height: 2.8rem;
+}
+.lf-huoguo .hg-y{
+    width: 5.15rem;
+    height: 100%;
+    float: left;
+    padding-top: 0.4rem;
+}
+.lf-huoguo .hg-y h3{
+    color: #323232;
+    font-size: 0.28rem;
+    line-height: 0.45rem;
+}
+.lf-huoguo .hg-y h5{
+    color: #323232;
+    font-size: 0.18rem;
+    float: left;
+    font-weight:700;
+}
+.lf-huoguo .hg-y p{
+    color: #7b7b7b;
+    font-size: 0.22rem;
+    float: left;
+    padding-right: 1.2rem;
+    margin: 0.15rem 0 0.1rem 0;
+}
+.lf-huoguo .hg-y img{
+    width: 4.94rem;
+    height: 0.03rem;
+    float: left;
+}
+.lf-huoguo .hg-y .san{
+    float: left;
+    width: 4.93rem;
+    height: 0.6rem;
+}
+.lf-huoguo .hg-y .san li{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    padding-top: 0.1rem;
+}
+.lf-huoguo .hg-y .san li .san-z{
+    width: 0.6rem;
+    height: 0.6rem;
+    float: left;
+}
+.lf-huoguo .hg-y .san li .san-z img{
+    width: 0.42rem;
+    height: 0.42rem;
+    display: block;
+    margin: 0 auto;
+}
+.lf-huoguo .hg-y .san li .san-y{
+    width: 1.02rem;
+    height: 0.42rem;
+    float: left;
+}
+.lf-huoguo .hg-y .san li .san-y h6{
+    color: #686868;
+    font-size: 0.13rem;
+}
+.lf-huoguo .hg-y .san li .san-y span{
+    color: #686868;
+    font-size: 0.13rem;
+    display: block;
+    margin: 0;
+}
+/*今日推荐结束*/
+/*底部开始*/
+.foot{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+}
+.foot li{
+    width: 25%;
+    height: 100%;
+    background:#ec1515;
+    padding-top: 0.1rem;
+    float: left;
+    position: relative;
+}
+.foot li a{
+    display: block;
+}
+.foot li .yinyin{
+    width: 0.14rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.foot li .cir{
+    width: 0.62rem;
+    height: 0.62rem;
+    background: #f33e34;
+    border: 0.01rem solid#fd352b;
+    border-radius: 50%;
+    margin: auto;
+}
+.foot li .active{
+    background: #dd1616;
+}
+.foot li .cir img{
+    display: block;
+    width: 0.37rem;
+    height: 0.37rem;
+    margin: 0.1rem auto;
+}
+.foot li h3{
+    font-size: 0.17rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.03rem;
+}
+/*底部结束*/
+
+
+
+
+
+
+
+

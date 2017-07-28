@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>地图</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/map.css">
+    <script src="js/rem.js"></script>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZWfUizyQSb5BOlarDo3qRpZqAYEcbvpV"></script>
+</head>
+<body>
+<div id="allmap"></div>
+<!--头部开始-->
+<header>
+    <div class="lf-left">
+        <a href="index.html">
+            <img src="img/1-25.png" alt="">
+        </a>
+    </div>
+    <div class="lf-title">
+        <h6>地图</h6>
+        <img src="img/1-1.png" alt="">
+    </div>
+    <div class="lf-right">
+        <a href="faxian.html">
+            <img src="img/1-12.png" alt="">
+        </a>
+    </div>
+</header>
+<!--头部结束-->
+<!--动画开始-->
+<div class="mark">
+    <div class="donghua"></div>
+</div>
+<!--动画结束-->
+<!--导航开始-->
+<ul class="list">
+    <li>
+        <div class="listT">
+            <img src="img/1-46.png" alt="">
+        </div>
+        <div class="listC">
+            <h4>餐厅</h4>
+            <span>RESTAURANT</span>
+        </div>
+    </li>
+    <li>
+        <div class="listT">
+            <img src="img/1-47.png" alt="">
+        </div>
+        <div class="listC">
+            <h4>酒吧</h4>
+            <span>BAR</span>
+        </div>
+    </li>
+    <li>
+        <div class="listT">
+            <img src="img/1-48.png" alt="">
+        </div>
+        <div class="listC">
+            <h4>咖啡厅</h4>
+            <span>COFFEE</span>
+        </div>
+    </li>
+</ul>
+<!--导航结束-->
+
+<script type="text/javascript">
+
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    map.centerAndZoom(new BMap.Point(112.560654,37.813556),14);
+
+    var local = new BMap.LocalSearch(map, {
+        renderOptions:{map: map}
+    });
+    local.searchInBounds("酒吧", map.getBounds());
+
+    map.addEventListener("dragend",function(){
+        map.clearOverlays();
+        local.searchInBounds("酒吧", map.getBounds());
+    });
+
+</script>
+<script>
+    $(function () {
+        setTimeout(function () {
+            $(".mark") .css("display","none");
+        },6000)
+    })
+</script>
+</body>
+</html>

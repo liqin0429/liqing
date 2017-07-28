@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reg.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <script src="js/rem.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/reg.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.metadata.js"></script>
+    <script>
+        $(function(){
+            $("#login-form").validate({
+                rules:{
+                    mname:{
+                        required:true,
+                        minlength:6,
+                        remote:{
+                            url:"checkname.php",
+                            type:"post",
+                            dataType:"json",
+                            data:{
+                                mname:function(){
+                                    return $("#account").val()
+                                }
+                            }
+                        }
+                    },
+                    mpass:{
+                        required:true,
+                        minlength:6,
+                    },
+                    mpass1:{
+                        required:true,
+                        minlength:6,
+                        equalTo:"#password"
+
+                    }
+                },
+                messages:{
+                    mname: {
+                        required: "必填",
+                        minlength:"不能少于6位",
+                        remote:"用户名已存在"
+                    },
+                    mpass:{
+                        required:"密码必填",
+                        minlength:"密码不能少于6位",
+                    },
+                    mpass1:{
+                        required:"密码必填",
+                        minlength:"密码不能少于6位",
+                        equalTo:"两次密码要一致"
+                    }
+                }
+            })
+        })
+
+    </script>
+    <style>
+        .form-group{
+            position: relative;
+        }
+        label[generated].error{
+            position: absolute;
+            top: 0.31rem;
+            right: 0.68rem;
+            width:2rem;
+            color:#da2102;
+            text-align: right;
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="img/3-anniu.png" alt="">
+</header>
+<div class="middle"></div>
+<section>
+    <div class="kong"></div>
+    <div class="con">
+        <div class="formbobx">
+            <form id="login-form"  action="" method="post">
+                <!--请输入账号-->
+                <div class="form-group">
+                    <input type="text" class="login" placeholder="请输入账号" id="account" name="mname" autocomplete="off">
+                    <i class="icon-user"></i>
+                    <i class="icon-del del"></i>
+                </div>
+                <!--请输入密码-->
+                <div class="form-group">
+                    <input type="password" name="mpass" class="reg" placeholder="请输入密码" id="password" autocomplete="off">
+                    <i class="icon-pass"></i>
+                    <i class="icon-del icon-del2"></i>
+                </div>
+                <!--确认密码-->
+                <div class="form-group">
+                    <input type="password" class="pass" placeholder="请再次输入密码" id="password1" name="mpass1" autocomplete="off">
+                    <i class="icon-pass icon-pass2"></i>
+                    <i class="icon-del icon-del3"></i>
+                </div>
+                <!--输入验证码-->
+                <input type="text" name="" class="cod" placeholder="请输入验证码" id="mpass" name="">
+                <img src="" alt="" class="codimg">
+                <!--<i class="icon-pass"></i>-->
+                <!--<i class="icon-del"></i>-->
+            </form>
+        </div>
+        <div class="content">
+            <button type="submit" class="regBtn" id="login">提交注册</button>
+            <!--<a href="" class="third-login">-->
+                <!---->
+            <!--</a>-->
+            <a href="login.html" id="firgetOasswird" style="float:right;">直接登录</a>
+            <span class="spliter" style="color: #ccc;float:right;padding-right:0.05rem;">|</span><a href="login.html" class="forget">已有账号</a>
+        </div>
+    </div>
+</section>
+<footer></footer>
+</body>
+</html>

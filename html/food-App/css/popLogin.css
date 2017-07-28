@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 微软雅黑;
+}
+body{
+    width:100%;
+    height:100%;
+    background: url("../img/3-popLogin.png") no-repeat;
+    background-size: cover;
+}
+header{
+    width:100%;
+    height:3.57rem;
+    /*background: yellow;*/
+}
+section{
+    width:100%;
+    height:4.88rem;
+    /*background: blue;*/
+}
+.btnbox{
+    width:5.7rem;
+    height:4.86rem;
+    /*background: red;*/
+    margin:0 auto;
+    position: relative;
+}
+.success-btn{
+    width:2.27rem;
+    height:0.97rem;
+    /*background: yellow;*/
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    left:30%;
+    /*right:0;*/
+}
+.success-btn a{
+    display: block;
+    width:100%;
+    height:100%;
+}

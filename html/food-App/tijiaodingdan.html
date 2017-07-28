@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>提交订单</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/tijiaodingdan.css">
+    <script src="js/rem.js"></script>
+    <style>
+        *{
+            touch-action: none;
+        }
+        #wrapper {
+            position: absolute;
+            z-index: 1;
+            /*top: 2rem;*/
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #scroller {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            transform: translateZ(0);
+            user-select: none;
+            text-size-adjust: none;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script>
+        // ISscroll
+        var myscroll;
+        function loaded(){
+            setTimeout(function(){
+                myscroll=new IScroll("#wrapper", { bounceEasing: 'elastic', bounceTime: 1200 });
+            },100);
+        }
+        window.addEventListener("load",loaded,false);
+
+
+    </script>
+</head>
+<body>
+<!--header开始-->
+<header>
+    <div class="neikuan">
+        <div class="zi">
+            <img src="img/zq_03.png" alt="">
+        </div>
+        <div class="back">
+            <a href="">
+                <img src="img/z-0.png" alt="">
+            </a>
+        </div>
+    </div>
+</header>
+<!--header结束-->
+<div id="wrapper">
+    <div id="scroller"  style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+        <ul>
+            <li>
+                <!--main开始-->
+                <div class="main">
+                    <img src="img/za-1_03.png" alt="" class="tou">
+                    <ul class="con">
+                        <li class="clear">
+                            <div class="ztu">
+                                <img src="img/zdq-1_11.png" alt="">
+                            </div>
+                            <div class="middle">
+                                <h1>海底捞</h1>
+                                <div class="dizhi">
+                                    <img src="img/zs1_07.png" alt="">
+                                    <span>平阳路学府接口东100</span>
+                                    <div class="jl clear">
+                                        <div class="yuan"></div>
+                                        <div class="shuzi">7520</div>
+                                    </div>
+                                </div>
+                                <img src="img/za_15.png" alt="" class="wj">
+                            </div>
+                            <div class="price">
+                                <h1>RMB</h1>
+                                <h2>168.00</h2>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="ztu">
+                                <img src="img/zd-1_09.png" alt="">
+                            </div>
+                            <div class="middle">
+                                <h1>亿思特咖啡</h1>
+                                <div class="dizhi">
+                                    <img src="img/zs1_07.png" alt="">
+                                    <span>平阳路学府接口东100</span>
+                                    <div class="jl clear">
+                                        <div class="yuan"></div>
+                                        <div class="shuzi">7520</div>
+                                    </div>
+                                </div>
+                                <img src="img/za_15.png" alt="" class="wj">
+                            </div>
+                            <div class="price">
+                                <h1>RMB</h1>
+                                <h2>168.00</h2>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="ztu">
+                                <img src="img/zd_07.png" alt="">
+                            </div>
+                            <div class="middle">
+                                <h1>七号小馆</h1>
+                                <div class="dizhi">
+                                    <img src="img/zs1_07.png" alt="">
+                                    <span>平阳路学府接口东100</span>
+                                    <div class="jl clear">
+                                        <div class="yuan"></div>
+                                        <div class="shuzi">7520</div>
+                                    </div>
+                                </div>
+                                <img src="img/za_15.png" alt="" class="wj">
+                            </div>
+                            <div class="price">
+                                <h1>RMB</h1>
+                                <h2>168.00</h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--main结束-->
+            </li>
+            <li>
+                <!--支付开始-->
+                <ul class="zhifu">
+                    <li>
+                        <div class="zi">
+                            <img src="img/tj01.png" alt="">
+                            <div class="h">
+                                <h1>支付金额</h1>
+                                <h2>PAYMENT AMOUNT</h2>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="jg">
+                            <img src="img/zzz1_06.png" alt="">
+                            <span class="span1">-13.00</span>
+                            <span class="span2">150.00</span>
+                            <dl>已使用抵用卷减免13.00</dl>
+                        </div>
+                    </li>
+                </ul>
+                <!--支付结束-->
+            </li>
+            <li>
+            <!--订单详情开始-->
+            <div class="ddxq">
+                <div class="neikuan">
+                    <div class="ddbox">
+                        <div class="title">
+                            <img src="img/tj02.png" alt="">
+                            <span>订单详情</span>
+                        </div>
+                        <dl>数量：<i>1</i></dl>
+                        <dl>抵用卷<span>使用抵用卷</span></dl>
+                        <dl>使用积分<span>本单不可用积分抵扣</span></dl>
+                        <dl>预留手机号：<i>18303471916</i></dl>
+                    </div>
+                </div>
+            </div>
+            <!--订单详情结束-->
+            </li>
+            <li>
+                <!--立即抢购开始-->
+                <div class="liji">
+                    <div class="neikuan">
+                        <img src="img/zd1_06.png" alt="">
+                    </div>
+                </div>
+                <!--立即抢购结束-->
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

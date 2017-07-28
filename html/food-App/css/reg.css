@@ -1,0 +1,194 @@
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 0.22rem;
+    font-family: 微软雅黑;
+}
+a{
+    color:#898989;
+    text-decoration: none;
+}
+body{
+    background: url("../img/3-reg-backdrop.png") no-repeat;
+    background-size: cover;
+}
+header{
+    width:100%;
+    height:0.88rem;
+    margin:0 auto ;
+}
+img{
+    width: 0.44rem;
+    height:0.44rem;
+    display: block;
+    margin-left:0.24rem;
+    margin-top:0.22rem;
+}
+.middle{
+    width:100%;
+    height:5rem;
+    /*border:1px solid#000;*/
+}
+section{
+    width:100%;
+    height:5.8rem;
+    margin:auto;
+    padding-left: 0.51rem;
+    padding-right:0.50rem;
+    /*background: aliceblue;*/
+}
+.kong{
+    width:100%;
+    height:0.5rem;
+}
+.con{
+    width:5.13rem;
+    height:5rem;
+    /*background: red;*/
+    margin:0 auto;
+}
+.formbobx{
+    width:100%;
+    height:4.1rem;
+    /*background: yellow;*/
+    position: relative;
+}
+input{
+    display: block;
+    width:100%;
+    height:0.95rem;
+    border:2px solid#c9c7c2;
+    text-align: left;
+    text-indent:1.04rem ;
+    line-height:0.66rem;
+    border-radius: 0.5rem;
+    font-size: 0.22rem;
+    color: #898989;
+    font-weight: 700;
+    outline: none;
+}
+input:nth-child(1){
+    margin-bottom:0.16rem;
+}
+section .con:nth-child(2) .formbobx input{
+    margin-bottom:0.1rem;
+}
+section .con:nth-child(3) .formbobx input{
+    margin-bottom:0.1rem;
+}
+.login{
+    position: relative;
+}
+.icon-user{
+    width:0.54rem;
+    height:0.54rem;
+    position: absolute;
+    top:0.19rem;
+    left:0.22rem;
+    background:url("../img/3-userbtn.png") no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    z-index: 5;
+}
+.icon-del{
+    width:0.24rem;
+    height:0.24rem;
+    position: absolute;
+    top:0.33rem;
+    right:0.29rem;
+    background:url("../img/3-del.png") no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    z-index: 5;
+}
+.reg{
+    position: relative;
+}
+.icon-pass{
+    width:0.54rem;
+    height:0.54rem;
+    position: absolute;
+    top:1.32rem;
+    left:0.22rem;
+    background:url("../img/3-passbtn.png") no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    z-index: 5;
+}
+.icon-pass2{
+    position: absolute;
+    top:-0.83rem;
+    left:0.22rem;
+}
+.icon-del{
+    width:0.24rem;
+    height:0.24rem;
+    position: absolute;
+    bottom:0.33rem;
+    right:0.29rem;
+    background:url("../img/3-del.png") no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    z-index: 5;
+}
+.icon-del2{
+    position: absolute;
+    top:1.46rem;
+    right:0.29rem;
+}
+.icon-del3{
+    position: absolute;
+    top:-0.7rem;
+    right:0.29rem;
+}
+.content{
+    width:100%;
+    height:0.3rem;
+    margin-top: 0.48rem;
+    font-size: 0.22rem;
+}
+.third-login{
+    padding-left: 0.4rem;
+    float: left;
+    font-size: 0.22rem;
+}
+.forget{
+    padding-right: 0.05rem;
+    float: right;
+    font-size: 0.22rem;
+}
+.cod{
+    width:2.09rem;
+    height:0.8rem;
+    text-align: center!important;
+    text-indent: 0;
+    margin-top: 0.16rem;
+    float: left;
+}
+.codimg{
+    float: left;
+    width:2.8rem;
+    height:0.8rem;
+    margin-top: 0.16rem;
+    background: rebeccapurple;
+}
+.regBtn{
+    /*width:0.88rem;*/
+    /*height:0.29rem;*/
+    outline: none;
+    font-style: normal;
+    margin:0;
+    padding:0;
+    background: none;
+    border:0;
+    padding-left: 0.4rem;
+    float: left;
+    font-size: 0.22rem;
+    color:#898989;
+}
+footer{
+    width:100%;
+    height:1.24rem;
+}

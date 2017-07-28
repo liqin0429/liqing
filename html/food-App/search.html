@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>搜索</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="js/rem.js"></script>
+    <style>
+        *{
+            touch-action: none;
+        }
+        #wrapper {
+            position: absolute;
+            z-index: 1;
+            top: 2rem;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #scroller {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            transform: translateZ(0);
+            user-select: none;
+            text-size-adjust: none;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script>
+        // ISscroll
+       var myscroll;
+       function loaded(){
+           setTimeout(function(){
+               myscroll=new IScroll("#wrapper", { bounceEasing: 'elastic', bounceTime: 1200 });
+           },100);
+       }
+       window.addEventListener("load",loaded,false);
+
+
+    </script>
+</head>
+<body>
+
+<!--header开始-->
+<header>
+    <div class="neikuan clear">
+        <div class="headers clear">
+            <div class="back">
+                <a href="">
+                    <img src="img/z-0.png" alt="">
+                </a>
+            </div>
+            <div class="search">
+                <input type="text">
+                <img src="img/z-1_03.png" alt="">
+            </div>
+        </div>
+        <div class="headerx">
+            <li class="clear">
+                <div class="yuan">
+                    <div class="common active"></div>
+                </div>
+                <div class="zi">
+                    <h1>餐厅</h1>
+                    <h2>Restaurant</h2>
+                </div>
+            </li>
+            <li class="clear">
+                <div class="yuan">
+                    <div class="common"></div>
+                </div>
+                <div class="zi">
+                    <h1>用户</h1>
+                    <h2>USER</h2>
+                </div>
+            </li>
+            <li class="clear">
+                <div class="yuan">
+                    <div class="common"></div>
+                </div>
+                <div class="zi">
+                    <h1>全部</h1>
+                    <h2>WHOLE</h2>
+                </div>
+            </li>
+        </div>
+    </div>
+</header>
+<!--header结束-->
+
+<div id="wrapper">
+    <div id="scroller"  style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+        <ul>
+            <li>
+                <!--nav开始-->
+                <nav>
+                    <ul class="neikuan">
+                        <li>中餐</li>
+                        <li>西餐</li>
+                        <li>料理</li>
+                        <li>烤肉</li>
+                        <li>烤鱼</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="neikuan">
+                        <li>钻石</li>
+                        <li>黄金</li>
+                        <li>VIP</li>
+                        <li>会员</li>
+                        <li>普通</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="neikuan">
+                        <li>火锅</li>
+                        <li>西餐</li>
+                        <li>川菜</li>
+                        <li>自主</li>
+                        <li>焖锅</li>
+                    </ul>
+                </nav>
+                <!--nav结束-->
+            </li>
+            <li>
+                <!--container开始-->
+                <div class="container">
+                    <div class="neikuan">
+                        <div class="sou clear">
+                            <img src="img/z-ss.png" alt="">
+                            <div class="zi">
+                                <h1>搜索记录</h1>
+                                <h2>SEARCH RECORD</h2>
+                            </div>
+                            <div class="xian"></div>
+                        </div>
+                        <div class="con">
+                            <div class="li">
+                                <div class="dian dian1"></div>
+                                <div class="dian dian2"></div>
+                                <div class="dian dian3"></div>
+                                <div class="dian dian4"></div>
+                                <img src="img/z-sf1.png" alt="">
+                                <h1>相册</h1>
+                                <h2>phonte</h2>
+                            </div>
+                            <div class="li">
+                                <div class="dian dian1"></div>
+                                <div class="dian dian2"></div>
+                                <div class="dian dian3"></div>
+                                <div class="dian dian4"></div>
+                                <img src="img/z-sf2.png" alt="">
+                                <h1>餐饮</h1>
+                                <h2>phonte</h2>
+                            </div>
+                            <div class="li">
+                                <div class="dian dian1"></div>
+                                <div class="dian dian2"></div>
+                                <div class="dian dian3"></div>
+                                <div class="dian dian4"></div>
+                                <img src="img/z-sf3.png" alt="">
+                                <h1>住宿</h1>
+                                <h2>phonte</h2>
+                            </div>
+                            <div class="li">
+                                <div class="dian dian1"></div>
+                                <div class="dian dian2"></div>
+                                <div class="dian dian3"></div>
+                                <div class="dian dian4"></div>
+                                <img src="img/z-sf4.png" alt="">
+                                <h1>度假</h1>
+                                <h2>phonte</h2>
+                            </div>
+                            <div class="li">
+                                <div class="dian dian1"></div>
+                                <div class="dian dian2"></div>
+                                <div class="dian dian3"></div>
+                                <div class="dian dian4"></div>
+                                <img src="img/z-sf5.png" alt="">
+                                <h1>翻译</h1>
+                                <h2>phonte</h2>
+                            </div>
+                            <div class="li">
+                                <div class="dian dian1"></div>
+                                <div class="dian dian2"></div>
+                                <div class="dian dian3"></div>
+                                <div class="dian dian4"></div>
+                                <img src="img/z-sf6.png" alt="">
+                                <h1>行程</h1>
+                                <h2>phonte</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--container结束-->
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script>
+    // 头部选择
+    var yuan=document.querySelectorAll(".headerx li .yuan");
+    var obj=document.querySelectorAll(".headerx li .common");
+    var nav=document.querySelectorAll("nav");
+    nav[0].style.display="block";
+    for(let i=0;i<yuan.length;i++){
+        yuan[i].onclick=function () {
+            for(let j=0;j<obj.length;j++){
+                obj[j].style.background="#fff";
+                nav[j].style.display="none";
+            }
+            obj[i].style.background="#ec1515";
+            nav[i].style.display="block";
+        }
+
+    }
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

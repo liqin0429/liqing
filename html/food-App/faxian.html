@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发现</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/faxian.css">
+    <script src="js/rem.js"></script>
+    <style>
+        *{
+            touch-action: none;
+        }
+        #wrapper {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #scroller {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            transform: translateZ(0);
+            user-select: none;
+            text-size-adjust: none;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script>
+        // ISscroll
+        var myscroll;
+        function loaded(){
+            setTimeout(function(){
+                myscroll=new IScroll("#wrapper", {
+                    bounceEasing: 'elastic',
+                    bounceTime: 1200,
+                    click:true,
+                });
+            },100);
+        }
+        window.addEventListener("load",loaded,false);
+
+
+    </script>
+</head>
+<body>
+<!--header开始-->
+<header>
+    <div class="neikuan">
+        <div class="zi">
+            <h1>发现</h1>
+            <img src="img/z_06.png" alt="">
+        </div>
+        <div class="back">
+            <a href="index.html">
+                <img src="img/z-0.png" alt="">
+            </a>
+        </div>
+    </div>
+</header>
+<!--header结束-->
+<div id="wrapper">
+    <div id="scroller"  style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+        <ul>
+            <li>
+                <!--动态开始-->
+                <div class="dt">
+                    <div class="neikuan">
+                        <div class="dtbox clear">
+                            <div class="tu1">
+                                <img src="img/z_03.png" alt="">
+                            </div>
+                            <div class="zi clear">
+                                <span>好友动态</span>
+                                <div class="yuan">1</div>
+                            </div>
+                            <div class="tu2">
+                                <img src="img/za_03.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--动态结束-->
+            </li>
+            <li>
+                <!--附近美食开始-->
+                <div class="food">
+                    <div class="neikuan">
+                        <div class="title">
+                            <img src="img/za_06.png" alt="">
+                        </div>
+                        <ul class="con">
+                            <li>
+                                <div class="bj">
+                                    <img src="img/za_10.png" alt="">
+                                </div>
+                                <div class="message">
+                                    <div class="photo">
+                                        <img src="img/za_13.png" alt="">
+                                    </div>
+                                    <div class="xian"></div>
+                                    <div class="price">
+                                        <h1>水果餐厅</h1>
+                                        <h2>FRUIT RESTAURANT</h2>
+                                        <h3>陆拾贰圆</h3>
+                                        <h4><span>62.00</span>RMB</h4>
+                                        <div class="wj">
+                                            <img src="img/za_20.png" alt="">
+                                        </div>
+                                        <div class="hot">
+                                            <img src="img/za_17.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="dizhi clear">
+                                        <div class="tu1">
+                                            <img src="img/zc_18.png" alt="">
+                                        </div>
+                                        <div class="zi">
+                                            <h1>太原小店区</h1>
+                                            <h2>TAIYUANXIAOD</h2>
+                                        </div>
+                                        <div class="jia">
+                                            <img src="img/za_21_20.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rect rect1"></div>
+                                <div class="rect rect2"></div>
+                            </li>
+                            <li>
+                                <div class="bj">
+                                    <img src="img/z_06_13.png" alt="">
+                                </div>
+                                <div class="message">
+                                    <div class="photo">
+                                        <img src="img/za_13.png" alt="">
+                                    </div>
+                                    <div class="xian"></div>
+                                    <div class="price">
+                                        <h1>海鲜餐厅</h1>
+                                        <h2>FRUIT RESTAURANT</h2>
+                                        <h3>陆拾贰圆</h3>
+                                        <h4><span>62.00</span>RMB</h4>
+                                        <div class="wj">
+                                            <img src="img/za_20.png" alt="">
+                                        </div>
+                                        <div class="hot">
+                                            <img src="img/za_17.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="dizhi clear">
+                                        <div class="tu1">
+                                            <img src="img/zc_18.png" alt="">
+                                        </div>
+                                        <div class="zi">
+                                            <h1>太原小店区</h1>
+                                            <h2>TAIYUANXIAOD</h2>
+                                        </div>
+                                        <div class="jia">
+                                            <img src="img/za_21_20.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rect rect1"></div>
+                                <div class="rect rect2"></div>
+                            </li>
+                            <li>
+                                <div class="bj">
+                                    <img src="img/za_16.png" alt="">
+                                </div>
+                                <div class="message">
+                                    <div class="photo">
+                                        <img src="img/za_13.png" alt="">
+                                    </div>
+                                    <div class="xian"></div>
+                                    <div class="price">
+                                        <h1>水果餐厅</h1>
+                                        <h2>FRUIT RESTAURANT</h2>
+                                        <h3>陆拾贰圆</h3>
+                                        <h4><span>62.00</span>RMB</h4>
+                                        <div class="wj">
+                                            <img src="img/za_20.png" alt="">
+                                        </div>
+                                        <div class="hot">
+                                            <img src="img/za_17.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="dizhi clear">
+                                        <div class="tu1">
+                                            <img src="img/zc_18.png" alt="">
+                                        </div>
+                                        <div class="zi">
+                                            <h1>太原小店区</h1>
+                                            <h2>TAIYUANXIAOD</h2>
+                                        </div>
+                                        <div class="jia">
+                                            <img src="img/za_21_20.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rect rect1"></div>
+                                <div class="rect rect2"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--附近美食结束-->
+            </li>
+            <li>
+                <!--附近人开始-->
+                <div class="people">
+                    <div class="neikuan">
+                        <div class="title">
+                            <img src="img/za_09.png" alt="">
+                        </div>
+                        <ul class="con">
+                            <li class="clear">
+                                <div class="tu1">
+                                    <img src="img/za_06(2).png" alt="">
+                                </div>
+                                <div class="zi">
+                                    <h1>TAYLORSWIFT</h1>
+                                    <div class="xian"></div>
+                                    <h2>泰勒斯威夫特是个很棒的</h2>
+                                    <img src="img/za_15.png" alt="">
+                                </div>
+                                <div class="video">
+                                    <img src="img/za_5.png" alt="">
+                                </div>
+                                <div class="phone">
+                                    <img src="img/za_02.png" alt="">
+                                </div>
+                            </li>
+                            <li class="clear">
+                                <div class="tu1">
+                                    <img src="img/za_09(2).png" alt="">
+                                </div>
+                                <div class="zi">
+                                    <h1>TAYLORSWIFT</h1>
+                                    <div class="xian"></div>
+                                    <h2>我吃西红柿</h2>
+                                    <img src="img/za_15.png" alt="">
+                                </div>
+                                <div class="video">
+                                    <img src="img/za_5.png" alt="">
+                                </div>
+                                <div class="phone">
+                                    <img src="img/za_04.png" alt="">
+                                </div>
+                            </li>
+                            <li class="clear">
+                                <div class="tu1">
+                                    <img src="img/za_12.png" alt="">
+                                </div>
+                                <div class="zi">
+                                    <h1>TAYLORSWIFT</h1>
+                                    <div class="xian"></div>
+                                    <h2>啊巴西</h2>
+                                    <img src="img/za_15.png" alt="">
+                                </div>
+                                <div class="video">
+                                    <img src="img/za_5.png" alt="">
+                                </div>
+                                <div class="phone">
+                                    <img src="img/za_02.png" alt="">
+                                </div>
+                            </li>
+                            <li class="clear">
+                                <div class="tu1">
+                                    <img src="img/za_06(2).png" alt="">
+                                </div>
+                                <div class="zi">
+                                    <h1>TAYLORSWIFT</h1>
+                                    <div class="xian"></div>
+                                    <h2>泰勒斯威夫特是个很</h2>
+                                    <img src="img/za_15.png" alt="">
+                                </div>
+                                <div class="video">
+                                    <img src="img/za_5.png" alt="">
+                                </div>
+                                <div class="phone">
+                                    <img src="img/za_04.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--附近人结束-->
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--底部开始-->
+<ul class="foot">
+    <li>
+        <a href="index.html">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir">
+                <img src="img/g-25.png" alt="">
+            </div>
+            <h3>首页</h3>
+        </a>
+    </li>
+    <li>
+        <a href="phb.html">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir">
+                <img src="img/g-26.png" alt="">
+            </div>
+            <h3>排行榜</h3>
+        </a>
+    </li>
+    <li>
+        <a href="###">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir active">
+                <img src="img/g-27.png" alt="">
+            </div>
+            <h3>发现</h3>
+        </a>
+    </li>
+    <li>
+        <a href="person.html">
+            <img src="img/g-29.png" alt="" class="yinyin">
+            <div class="cir">
+                <img src="img/g-28.png" alt="">
+            </div>
+            <h3>我的</h3>
+        </a>
+    </li>
+</ul>
+<!--底部结束-->
+
+</body>
+<script>
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,346 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 0.22rem;
+    font-family: 微软雅黑;
+}
+body{
+    background: url("../img/3-backdrop3.png") no-repeat;
+    background-size: cover;
+}
+/*header{*/
+    /*width:100%;*/
+    /*height:0.88rem;*/
+    /*!*border:1px solid#000;*!*/
+    /*!*margin-bottom: 0.5rem;*!*/
+    /*position: absolute;*/
+    /*top:0;*/
+    /*left:0;*/
+    /*z-index:30;*/
+/*}*/
+header{
+    /*position: absolute;*/
+    /*z-index: 2;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    width: 100%;
+    height: 0.88rem;
+}
+.icon-memu{
+    display: block;
+    width:0.44rem;
+    height:0.44rem;
+    background: url("../img/3-memubtn.png") no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    margin-left:0.24rem;
+    margin-top:0.22rem;
+    float: left;
+}
+.icon-set{
+    display: block;
+    width:0.44rem;
+    height:0.44rem;
+    background: url("../img/3-setbtn.png") no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    margin-right:0.24rem;
+    margin-top:0.22rem;
+    float: right;
+}
+.top{
+    width:100%;
+    height:3.34rem;
+    /*border: 1px solid#000000;*/
+    padding-top:0.4rem;
+}
+.top-head-wai{
+    width:1.61rem;
+    height:1.61rem;
+    background: url("../img/3-guangquan.png")no-repeat;
+    background-size: cover;
+    margin: auto;
+    padding-top:0.08rem;
+}
+.top-head{
+    width:1.42rem;
+    height:1.42rem;
+    background: #fff;
+    margin:0 auto;
+    border-radius: 50%;
+    /*margin-top:0.06rem;*/
+}
+.top-title{
+    width:100%;
+    height:1.44rem;
+    /*background: yellow;*/
+    padding-top:0.1rem;
+}
+.title-one{
+    font-size: 0.22rem;
+    color:#fff;
+    /*margin:auto;*/
+    text-align: center;
+    letter-spacing: 0.02rem;
+}
+.tilte-two{
+    display: block;
+    font-size: 0.22rem;
+    font-weight: bold;
+    color:#fff;
+    text-align: center;
+    /*padding-top:0.06rem;*/
+    padding-bottom:0.05rem;
+    letter-spacing: 0.02rem;
+}
+.title-three{
+    display: block;
+    font-size: 0.22rem;
+    color:#fff;
+    text-align: center;
+    letter-spacing: 0.02rem;
+}
+.starbox{
+    width:0.96rem;
+    height:0.16rem;
+    margin:0 auto;
+    margin-bottom: 0.12rem;
+}
+.star{
+    width:0.16rem;
+    height:0.16rem;
+    float: left;
+    margin-right:0.04rem;
+}
+.star:nth-child(5){
+    margin-right:0;
+}
+.star img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+/*中间内容*/
+.content{
+    width: 6.24rem;
+    height:7.99rem;
+    background: #fff;
+    margin:0 auto;
+    border-radius: 0.11rem;
+    box-shadow:0 0 24px 0 #cfcfcf;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    margin-top:0.17rem;
+}
+.con-top{
+    width:100%;
+    height:1.24rem;
+    /*background: red;*/
+}
+.con-category{
+    width:100%;
+    height:100%;
+    padding-top: 0.43rem;
+    padding-bottom:0.17rem;
+    padding-left:0.2rem;
+    padding-right:0.16rem;
+}
+.category{
+    width:1.71rem;
+    height:0.64rem;
+    background: #293646;
+    border-radius:0.5rem;
+    float: left;
+    margin-right:0.3rem;
+}
+.category:nth-child(1){
+    background: #4b8bfd;
+}
+.category:nth-child(3){
+    margin-right:0;
+}
+.icon{
+    width: 0.68rem;
+    height:100%;
+    /*background: yellow;*/
+    padding:0.07rem 0;
+    padding-right: 0.11rem;
+    padding-left:0.08rem;
+    float: left;
+}
+.icon-follow{
+    display: block;
+    width:0.5rem;
+    height:0.5rem;
+    background: url("../img/3-guanzhu.png") no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+.category:nth-of-type(2) .icon .icon-follow{
+     background: url("../img/3-dongtai.png") no-repeat;
+    background-size: cover;
+ }
+.category:nth-of-type(3) .icon .icon-follow{
+    background: url("../img/3-aixin.png") no-repeat;
+    background-size: cover;
+}
+.con-text{
+    width:0.56rem;
+    height:100%;
+    /*background: yellow;*/
+    float: left;
+}
+.follow-title{
+    font-size: 0.22rem;
+    color:#fff;
+    font-weight: bold;
+    padding-bottom: 0.04rem;
+}
+.con-text span{
+    font-size: 0.18rem;
+    color:#fff;
+    font-weight: bold;
+    border-top: 3px dashed #fff;
+}
+.con-option{
+    width:100%;
+    height:6.75rem;
+    /*background: yellow;*/
+}
+.con-option ul{
+    width:100%;
+    height:100%;
+    padding:0 0.27rem;
+}
+.con-option ul li{
+    width:100%;
+    height:0.93rem;
+    /*background:pink;*/
+    border-bottom: 1px solid #e7e7e7;
+    padding-top:0.41rem;
+}
+.con-option ul li:last-of-type{
+    height:1.2rem;
+}
+.con-option>ul>li>.icon-icon2{
+    width:0.66rem;
+    height: 0.5rem;
+    /*background: blanchedalmond;*/
+    float: left;
+}
+.con-option>ul>li>.icon-icon2 i{
+    display: block;
+    width:0.5rem;
+    height:0.5rem;
+    background: url("../img/3-dingdan.png") no-repeat;
+    background-size: cover;
+}
+.con-option>ul>li:nth-child(2) .icon-icon2 i{
+      background: url("../img/3-qianbao.png") no-repeat;
+    background-size: cover;
+  }
+.con-option>ul>li:nth-child(3) .icon-icon2 i{
+    background: url("../img/3-qian.png") no-repeat;
+    background-size: cover;
+}
+.con-option>ul>li:nth-child(4) .icon-icon2 i{
+    background: url("../img/3-diyongquan.png") no-repeat;
+    background-size: cover;
+}
+.con-option>ul>li:nth-child(5) .icon-icon2 i{
+    background: url("../img/3-huiquanka.png") no-repeat;
+    background-size: cover;
+}
+.con-option>ul>li:nth-child(6) .icon-icon2 i{
+    background: url("../img/3-shouchang.png") no-repeat;
+    background-size: cover;
+}
+.con-option>ul>li:nth-child(7) .icon-icon2 i{
+    background: url("../img/3-huiyuanzhongxin.png") no-repeat;
+    background-size: cover;
+}
+.con-option ul li a{
+    font-size: 0.28rem;
+    color: #353536;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.51rem;
+    float: left;
+}
+.con-option-right{
+    float: right;
+    width:3.92rem;
+    height:100%;
+    padding-top:0.1rem;
+}
+.con-option-right>span{
+    display: block;
+    float: right;
+    color: #a5a5a5;
+}
+.con-option ul li:nth-child(5) .con-option-right span{
+    width:0.17rem;
+    height:0.24rem;
+    background: url("../img/3-more.png") no-repeat;
+    background-size: cover;
+}
+.con-option ul li:nth-child(7) .con-option-right span{
+    width:0.17rem;
+    height:0.24rem;
+    background: url("../img/3-more.png") no-repeat;
+    background-size: cover;
+}
+
+
+/*底部*/
+.foot{
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index:30;
+}
+.foot li{
+    width: 25%;
+    height: 100%;
+    background:#ec1515;
+    padding-top: 0.1rem;
+    float: left;
+    position: relative;
+}
+.foot li a{
+    display: block;
+}
+.foot li .yinyin{
+    width: 0.14rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.foot li .cir{
+    width: 0.62rem;
+    height: 0.62rem;
+    background: #f33e34;
+    border: 0.01rem solid#fd352b;
+    border-radius: 50%;
+    margin: auto;
+}
+.foot li .active{
+    background: #dd1616;
+}
+.foot li .cir img{
+    display: block;
+    width: 0.37rem;
+    height: 0.37rem;
+    margin: 0.1rem auto;
+}
+.foot li h3{
+    font-size: 0.17rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.03rem;
+}

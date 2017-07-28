@@ -1,0 +1,345 @@
+clear:after{
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+body{
+    font-size: 0.28rem;
+    font-family: "苹方";
+    /*background-color: #1c1616;*/
+    background-image: url("../img/zc_03.png");
+    background-size: cover;
+}
+.neikuan {
+    width: 7rem;
+    margin: 0 auto;
+}
+
+/*header开始*/
+header{
+    width: 100%;
+    height: 1rem;
+    background: #ec1515;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+header .neikuan {
+    position: relative;
+}
+header .zi{
+    width: 3.44rem;
+    height: 1rem;
+    padding-top: 0.06rem;
+    margin: auto;
+}
+header .zi img{
+    width: 3.44rem;
+    height: 0.72rem;
+    vertical-align: top;
+}
+header .back{
+    width: 0.45rem;
+    height: 0.48rem;
+    position: absolute;
+    top: 0.3rem;
+}
+header .back img{
+    width: 0.45rem;
+    height: 0.48rem;
+}
+header .sou{
+    right: 0;
+}
+/*banner开始*/
+.banner{
+    width: 100%;
+    height: 4.1rem;
+    margin-top: 1rem;
+}
+.banner img{
+    width: 100%;
+    height: 4.1rem;
+}
+/*地址开始*/
+.dizhi{
+    width: 100%;
+    height: 2.48rem;
+    border-bottom: 0.01rem solid #c5c5c6;
+    padding-top: 0.66rem;
+}
+.dizhi h1,.dizhi h2{
+    font-size: 0.27rem;
+    color: #fff;
+}
+.dizhi h1{
+    font-weight: bold;
+}
+.dizhi .price{
+    width: 2.74rem;
+    height: 0.39rem;
+}
+.dizhi .price img{
+    width: 1.48rem;
+    height: 0.27rem;
+    float: left;
+}
+.dizhi .price h3{
+    float: left;
+    color: #fff;
+    font-size: 0.17rem;
+}
+.dizhi .price h3 span{
+    color: #ec1515;
+}
+.dizhi .weizhi img{
+    width: 0.23rem;
+    height: 0.3rem;
+    vertical-align: middle;
+}
+.dizhi .weizhi span{
+    font-size: 0.23rem;
+    color: #fff;
+}
+/*价格开始*/
+.jiage{
+    width: 100%;
+    height: 1.76rem;
+}
+.jiage h1{
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.46rem;
+    margin-top: 0.46rem;
+}
+.jiage span{
+    float: left;
+    color: #fff;
+    font-size: 0.22rem;
+    margin-top: 0.7rem;
+    margin-left: 0.14rem;
+}
+.jiage .qgou{
+    width: 2.3rem;
+    height: 0.7rem;
+    float: right;
+    border-radius: 0.06rem;
+    background: #ec1515;
+    text-align: center;
+    line-height: 0.7rem;
+    color: #fff;
+    font-size: 0.23rem;
+    margin-top: 0.2rem;
+}
+/*菜品开始*/
+.caip{
+    width: 100%;
+    height: 2rem;
+}
+.caip h1{
+    color: #fff;
+    font-size: 0.28rem;
+    margin-bottom: 0.34rem;
+}
+.caip ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.caip ul li{
+    color: #fff;
+    font-size: 0.19rem;
+    margin-right: 0.44rem;
+    margin-bottom: 0.28rem;
+}
+.caip ul li:nth-child(6){
+    margin-right: 0;
+}
+/*客户评价开始*/
+.kehu{
+    width: 100%;
+    height: auto;
+}
+.kehu h1{
+    color: #fff;
+    font-size: 0.28rem;
+    margin-bottom: 0.36rem;
+}
+.kehu ul{
+    width: 5.9rem;
+    /*height: 0.76rem;*/
+    background-color: #3f3e3e;
+    border-radius: 0.8rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.36rem;
+    padding-bottom: 0.12rem;
+}
+.kehu ul li{
+    width: 1.5rem;
+    /*height: 0.54rem;*/
+    border-radius: 0.4rem;
+    margin-top: 0.12rem;
+}
+.kehu ul .active{
+    /*background-color: #ec1515;*/
+}
+.kehu ul li h2{
+    color: #fff;
+    font-size: 0.23rem;
+    text-align: center;
+    margin-top: 0.04rem;
+}
+.kehu ul li h3{
+    color: #fff;
+    font-size: 0.12rem;
+    text-align: center;
+    margin-top: -0.04rem;
+}
+.kehu ul .xian{
+    width: 0.03rem;
+    height: 0.76rem;
+}
+.kehu ul .xian img{
+    width: 0.03rem;
+    height: 0.44rem;
+    margin-top: 0.16rem;
+}
+.tubiao{
+    width: 100%;
+    height: 3.6rem;
+    position: relative;
+}
+.tubiao span{
+    color: #fff;
+    font-size: 0.2rem;
+    position: absolute;
+    left: 0;
+}
+.tubiao img{
+    width: 6.13rem;
+    height: 3.45rem;
+    position: absolute;
+    left: 0.54rem;
+}
+/*评论开始*/
+.pl{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.66rem;
+}
+.pl .title{
+    height: 1.12rem;
+}
+.pl .tx{
+    width: 0.74rem;
+    height: 0.74rem;
+    float: left;
+}
+.pl .tx img{
+    width: 0.74rem;
+    height: 0.74rem;
+}
+.pl .name{
+    float: left;
+    margin-left: 0.22rem;
+    padding-top: 0.14rem;
+}
+.pl .name ul{
+    margin-top: -0.08rem;
+ }
+.pl .name h1{
+    color: #fff;
+    font-size: 0.24rem;
+}
+.pl .name img{
+    width: 1.48rem;
+    height: 0.27rem;
+    vertical-align: bottom;
+}
+.pl .name time{
+    color: #fff;
+    font-size: 0.14rem;
+}
+.pl .con{
+    width: 5.98rem;
+    height: 0.56rem;
+    font-size: 0.2rem;
+    color: #fff;
+    margin-left: 0.97rem;
+   /* white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;*/
+}
+/*底部开始*/
+.foot{
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+.foot li{
+    width: 25%;
+    height: 100%;
+    background:#ec1515;
+    padding-top: 0.1rem;
+    float: left;
+    position: relative;
+}
+.foot li a{
+    display: block;
+}
+.foot li .yinyin{
+    width: 0.14rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.foot li .cir{
+    width: 0.62rem;
+    height: 0.62rem;
+    background: #f33e34;
+    border: 0.01rem solid#fd352b;
+    border-radius: 50%;
+    margin: auto;
+}
+.foot li .active{
+    background: #dd1616;
+}
+.foot li .cir img{
+    display: block;
+    width: 0.37rem;
+    height: 0.37rem;
+    margin: 0.1rem auto;
+}
+.foot li h3{
+    font-size: 0.17rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.03rem;
+}
+/*底部结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

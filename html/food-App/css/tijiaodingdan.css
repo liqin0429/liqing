@@ -1,0 +1,282 @@
+clear:after{
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+body{
+    font-size: 0.28rem;
+    font-family: "苹方";
+    background-color: #f0f0f0;
+}
+.neikuan {
+    width: 7rem;
+    margin: 0 auto;
+}
+
+/*header开始*/
+header{
+    width: 100%;
+    height: 1rem;
+    background: #ec1515;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+header .neikuan {
+    position: relative;
+}
+header .zi{
+    width: 3.44rem;
+    height: 1rem;
+    padding-top: 0.06rem;
+    margin: auto;
+}
+header .zi img{
+    width: 3.44rem;
+    height: 0.72rem;
+    vertical-align: top;
+}
+header .back{
+    width: 0.45rem;
+    height: 0.48rem;
+    position: absolute;
+    top: 0.3rem;
+}
+header .back img{
+    width: 0.45rem;
+    height: 0.48rem;
+}
+header .sou{
+    right: 0;
+}
+/*main开始*/
+.main{
+    width: 100%;
+    height: 6.72rem;
+    margin-top: 1rem;
+    position: relative;
+}
+.main .tou{
+    width: 100%;
+    height: 1.69rem;
+}
+.main .con{
+    width: 6.24rem;
+    height: 5.68rem;
+    background-color: #fff;
+    border-radius: 0.1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0.28rem;
+    border-bottom: 0.1rem solid #ffc320;
+    box-shadow: 0 0.05rem 0.12rem 0.03rem rgba(0, 0, 0, 0.17);
+    padding-top: 0.52rem;
+}
+.main li{
+    width: 5.3rem;
+    height: 1.3rem;
+    margin: 0 auto;
+    border-bottom: 0.01rem solid #c6c6c6;
+}
+.main li .ztu{
+    width: 0.9rem;
+    height: 100%;
+    float: left;
+    padding-top: 0.23rem;
+}
+.main li .ztu img{
+    width: 0.9rem;
+    height: 0.9rem;
+}
+.main li .middle{
+    height: 100%;
+    margin-left: 0.3rem;
+    padding-top: 0.4rem;
+    float: left;
+    position: relative;
+}
+.main li .middle h1{
+    font-size: 0.23rem;
+}
+.main li .middle .dizhi img{
+    width: 0.17rem;
+    height: 0.23rem;
+    vertical-align: middle;
+}
+.main li .middle .dizhi span{
+    font-size: 0.17rem;
+}
+.main li .middle .dizhi .jl{
+    height: 0.16rem;
+    display: inline-block;
+    margin-left: 0.16rem;
+}
+.main li .yuan{
+    width: 0.14rem;
+    height: 0.14rem;
+    border-radius: 50%;
+    background-color: #ec1515;
+    float: left;
+    margin-top: 0.03rem;
+}
+.main li .shuzi{
+    font-size: 0.14rem;
+    float: left;
+    margin-left: 0.1rem;
+}
+.main .wj{
+    width: 0.68rem;
+    height: 0.16rem;
+    position: absolute;
+    right: 0.3rem;top: 0.46rem;
+}
+.main .price{
+    float: right;
+    width: 0.84rem;
+    height: 100%;
+    padding-top: 0.44rem;
+}
+.main .price h1{
+    font-size: 0.17rem;
+    color: #ec1515;
+    padding-left: 0.03rem;
+}
+.main .price h2{
+    font-size: 0.22rem;
+    color: #ec1515;
+    font-weight: bold;
+}
+/*支付开始*/
+.zhifu li{
+    width: 6.24rem;
+    height: 1.66rem;
+    border-bottom: 0.01rem solid #c6c6c6;
+    margin: auto;
+}
+.zhifu .zi{
+    width: 2.92rem;
+    height: 1rem;
+    margin: auto;
+}
+.zhifu .zi img{
+    width: 0.46rem;
+    height: 0.32rem;
+    float: left;
+    margin-top: 0.24rem;
+}
+.zhifu .zi .h{
+   float: left;
+    margin-left: 0.18rem;
+    text-align: center;
+}
+.zhifu .zi h1{
+    font-size: 0.3rem;
+}
+.zhifu .zi h2{
+    font-size: 0.23rem;
+}
+.zhifu .jg{
+    width: 2.92rem;
+    height: 1.2rem;
+    margin: auto;
+    position: relative;
+    color: #ec1515;
+    font-weight: bold;
+}
+.zhifu .jg img{
+    width: 0.8rem;
+    height: 0.29rem;
+    position: absolute;
+    top: 0.8rem;
+}
+.zhifu .jg .span1{
+    position: absolute;
+    font-size: 0.18rem;
+    top: 0.56rem;
+    left: 0.11rem;
+}
+.zhifu .jg .span2{
+    position: absolute;
+    font-size: 0.5rem;
+    top: 0.54rem;
+    left: 0.97rem;
+}
+.zhifu{
+    padding-bottom: 0.54rem;
+}
+.zhifu dl{
+    font-size: 0.17rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -0.84rem;
+    text-align: center;
+}
+/*订单详情开始*/
+.ddxq{
+    width: 100%;
+    height: 5.06rem;
+    background: #fff;
+}
+.ddbox{
+    width: 100%;
+    height: 5.06rem;
+    padding: 0.52rem 0.72rem 0 0.78rem;
+}
+.ddbox .title img{
+    width: 0.36rem;
+    height: 0.44rem;
+    vertical-align: middle;
+}
+.ddbox .title span{
+    font-size: 0.28rem;
+    font-weight: bold;
+}
+.ddbox dl{
+    padding-top: 0.4rem;
+    font-size: 0.23rem;
+    font-weight: bold;
+    margin: 0;
+}
+i{
+    font-style: normal;
+}
+.ddbox dl span{
+    font-size: 0.2rem;
+    color: #c6c6c6;
+    float: right;
+}
+/*立即抢购开始*/
+.liji{
+    width: 100%;
+    height: 1rem;
+    padding-top: 0.22rem;
+    background: #ec1515;
+}
+.liji img{
+    width: 2.03rem;
+    height: 0.56rem;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

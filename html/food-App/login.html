@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <script src="js/rem.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.metadata.js"></script>
+    <script>
+        $(function(){
+            $("#login-form").validate({
+                rules:{
+                    mname:{
+                        required:true,
+                        minlength:6,
+                        remote:{
+                            url:"checkname.php",
+                            type:"post",
+                            dataType:"json",
+                            data:{
+                                mname:function(){
+                                    return $("#account").val()
+                                }
+                            }
+                        }
+                    },
+                    mpass:{
+                        required:true,
+                        minlength:6,
+                    },
+//                    mpass1:{
+//                        required:true,
+//                        minlength:6,
+//                        equalTo:"#password"
+//
+//                    }
+                },
+                messages:{
+                    mname: {
+                        required: "必填",
+                        minlength:"不能少于6位",
+                        remote:"用户名已存在"
+                    },
+                    mpass:{
+                        required:"密码必填",
+                        minlength:"密码不能少于6位",
+                    },
+//                    mpass1:{
+//                        required:"密码必填",
+//                        minlength:"密码不能少于6位",
+//                        equalTo:"两次密码要一致"
+//                    }
+                }
+            })
+        })
+
+    </script>
+    <style>
+        .form-group{
+            position: relative;
+        }
+        label[generated].error{
+            position: absolute;
+            top: 0.31rem;
+            right: 0.68rem;
+            width:2rem;
+            color:#da2102;
+            text-align: right;
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="img/3-anniu.png" alt="">
+</header>
+<div class="middle"></div>
+<section>
+    <div class="kong"></div>
+    <div class="con">
+        <div class="formbobx">
+            <form id="login-form" action="" method="post">
+                <div class="form-group">
+                    <input type="text" name="mname" class="login" placeholder="请输入账号" id="mname" autocomplete="off">
+                    <i class="icon-user"></i>
+                    <i class="icon-del2"></i>
+                </div>
+                <div class="from-group">
+                    <input type="password" name="mpass" class="reg" placeholder="请输入密码" id="mpass" autocomplete="off">
+                    <i class="icon-pass"></i>
+                    <i class="icon-del"></i>
+                </div>
+            </form>
+        </div>
+        <div class="content">
+            <a href="reg.html" class="third-login">注册账号</a>
+            <a href="" class="forget">忘记密码？</a>
+        </div>
+    </div>
+    <div class="btnbox">
+        <div class="btnimg">
+            <button id="login" type="submit" class="btn"></button>
+        </div>
+    </div>
+</section>
+<footer></footer>
+</body>
+</html>
