@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扫雷游戏</title>
+    <style>
+        *{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url(img/bg.jpg) no-repeat;;
+            background-size: cover;
+        }
+        h1{
+            width: 500px;
+            height: 100px;
+            margin: 30px auto;
+            background-color:rgba(250, 28, 0, 0.5);
+            font-weight: 700;
+            font-size: 50px;
+            font-family: "微软雅黑";
+            line-height: 100px;
+            text-align: center;
+            color: #fff;
+        }
+        .scene{
+            width: 500px;height: 500px;
+            border-top:1px solid #ccc;
+            border-left:1px solid #ccc;
+            margin: 0 auto;
+        }
+        .mask{
+            width:500px;height: 500px;
+            border-top: 1px solid #000;
+            border-left: 1px solid #000;
+            background: rgba(255, 65, 4, 0.8);
+            position: absolute;
+            z-index: 10;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .start{
+            width: 250px;height: 80px;
+            background-image: url(img/f.png);
+            line-height: 100px;
+            text-align: center;
+            cursor: pointer;
+            margin: 200px auto;
+            font-size: 30px;
+            background-size: 100% 100%;
+            background-position: center;
+        }
+        .block{
+            width: 49px;height: 49px;
+            background-size: cover;
+          background: url(img/caod.jpg);
+            float: left;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .control{
+            width: 170px;height: 500px;
+           background: #ccaa7d;
+            position: fixed;
+            right: 48%;
+            margin-right: -500px;
+            top: 150px;
+        }
+        .control div{
+            width: 100px;height: 30px;
+            border-radius: 10px;
+            background: rgba(65,15,85,0.3);
+            line-height: 30px;
+            text-align: center;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+        .control input{
+            width: 100px;height: 30px;
+            border-radius: 10px;
+           background: rgba(65,15,85,0.3);
+            line-height: 30px;
+            text-align: center;
+            margin: 20px auto;
+            cursor: pointer;
+            display: block;
+        }
+        .control>.paihangbang,.control>.difficult{
+            position: relative;
+        }
+
+        .control>.paihangbang>.paihang{
+            position: absolute;
+            z-index: 20;
+            left:-35px;
+            top: 40px;
+            width: 180px;height: 220px;
+            text-align: left;
+            background-image: url(img/w658.png);
+            /*box-shadow: 1px 1px 10px #000;*/
+            overflow: hidden;
+            padding: 10px;
+            display: none;
+            font-size: 15px;
+            line-height: 20px;
+            padding-top: 30px;
+            padding-left: 30px;
+            box-sizing:border-box;
+            background-size: cover;
+            background-position: center;
+        }
+        .control>.difficult>.nandu{
+             position: absolute;
+            width: 500px;
+            height: 500px;
+            left: -644px;
+            top: -162px;
+            text-align: left;
+            background: linear-gradient(60deg,#f3f3f3 0,#fff 50%);
+            box-shadow: 1px 1px 10px #fcc89a;
+            overflow: hidden;
+            padding: 10px;
+            display: none;
+            z-index: 21;
+        }
+        .control>.difficult>.nandu h1{
+            width: 200px;height: 30px;
+            border-radius: 15px;
+            background: #333;
+            line-height: 30px;
+            text-align: center;
+            font-size: 25px;
+            margin:50px auto;
+            color:#fff;
+            font-family: 华文楷体;
+
+        }
+        .control>.difficult>.nandu>li{
+            width: 300px;height: 30px;
+            border-radius: 15px;
+            background: rgba(0,0,0,0.3);
+            line-height: 30px;
+            text-align: center;
+            font-size: 20px;
+            margin:50px auto;
+            font-family: 华文彩云;
+            position: relative;
+            overflow: hidden;
+            color: #ccc;
+        }
+        .control>.difficult>.nandu>li:hover{
+            box-shadow: 1px 1px 10px rgba(10,10,255,0.3);
+            background: rgba(10,10,255,0.3);
+        }
+        .control>.difficult>.nandu>li>.l{
+           width: 300px;height: 30px;
+            border-radius: 40%;
+            background: rgba(255,255,255,0.3);
+            position: absolute;
+            left: 0;
+            top: -35px;
+        }
+        .control>.difficult>.nandu>li>span{
+            width: 300px;height: 30px;
+            display: block;
+            z-index: 999;
+            position: relative;
+        }
+        .control>.paihangbang>.paihang>li{
+            width: 100%;
+        }
+        .control time{
+            display: block;
+            border-radius: 10px;
+            background: #fff;
+            line-height: 30px;
+            text-align: center;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+        .control time span{
+            color: red;
+            font-size: 20px;
+        }
+        .show{
+            background: url(img/dilei.jpg) no-repeat;
+            background-size: cover;
+            background-color: #fff;
+        }
+        .num{
+            background: #fff;
+            text-align: center;
+            line-height: 49px;
+        }
+        .flag{
+           background: url(img/hongqi.jpg) no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>欢迎来到--扫雷游戏</h1>
+    <div class="mask">
+        <div class="start"></div>
+    </div>
+    <div class="scene"></div>
+    <div class="control">
+        <time>总共用时 <span>0</span>秒</time>
+        <div class="flagnum">flag:10</div>
+        <input type="button" class="restart" value="重新开始">
+        <div class="difficult">难度选择
+            <ul class="nandu">
+                <h1>难度选择</h1>
+                <li>
+                    <div class="l"></div>
+                    <span>简单</span>
+                </li>
+                <li>
+                    <div class="l"></div>
+                    <span>一般</span>
+                </li>
+                <li>
+                    <div class="l"></div>
+                    <span>困难</span>
+                </li>
+            </ul>
+        </div>
+        <div class="paihangbang">排行榜
+            <ul class="paihang">
+                <h1>排行榜</h1>
+                 
+             </ul>
+        </div>
+    </div>
+    
+</body>
+<script src="jquery.js"></script>
+<script>
+
+    var ms=0;
+    var mt;
+    var scor=0;
+    var bestscor=localStorage.best?JSON.parse(localStorage.best):[];
+    var leishu=10;
+    var num=10;
+    var bili=0.9;
+    $(".difficult").on("click",".nandu li span",function(e){
+        var target= e.target;
+        if($(target).html()=="简单"){
+            leishu=10;
+            num=10;
+            bili=0.9;
+            $(".mask").hide();
+            $(".scene").empty();
+            createLei();
+            $("time span").html(0);
+            ms=0;
+            clearInterval(mt);
+            mt=setInterval(times,1000);
+            $(".flagnum").html("flag:"+num);
+        }
+        if($(target).html()=="一般"){
+            leishu=20;
+            num=20;
+            bili=0.8;
+            $(".mask").hide();
+            $(".scene").empty();
+            createLei();
+            $("time span").html(0);
+            ms=0;
+            clearInterval(mt);
+            mt=setInterval(times,1000);
+            $(".flagnum").html("flag:"+num);
+        }
+        if($(target).html()=="困难"){
+            leishu=30;
+            num=30;
+            bili=0.7;
+            $(".mask").hide();
+            $(".scene").empty();
+            createLei();
+            $("time span").html(0);
+            ms=0;
+            clearInterval(mt);
+            mt=setInterval(times,1000);
+            $(".flagnum").html("flag:"+num);
+        }
+    })
+    $(".paihangbang").click(function(){
+        reWrite();
+        $(".paihang").slideToggle();
+    })
+    $(".difficult").click(function(){
+        $(".nandu").slideToggle();
+    })
+    $(".start").click(function(){
+        $(".mask").hide();
+         mt=setInterval(times,1000);
+        createLei();
+    })
+    $(".restart").click(function(){
+        $(".mask").hide();
+        $(".scene").empty();
+        createLei();
+        $("time span").html(0);
+        ms=0;
+        num=10;
+        
+        clearInterval(mt);
+        mt=setInterval(times,1000);
+        $(".flagnum").html("flag:"+leishu);
+    })
+    function times(){
+        ms++;
+        $("time span").html(ms);
+    }
+    function createLei(){
+        do{
+            $(".scene").empty();
+            for(let i=0;i<10;i++){
+                for(let j=0;j<10;j++){
+                    var isLei=Math.random()>bili;
+                    $("<div>").addClass(function(){
+                        if(isLei){
+                            return "block lei";
+                        }else{
+                            return "block";
+                        }
+                    }).attr("id",i+"-"+j).data("pos",{x:i,y:j}).mousedown(mousedownEvent).appendTo(".scene");
+                }
+            }
+        }while($(".lei").length!=leishu)
+    }
+   createLei();
+    function mousedownEvent(e){
+        if(e.which==1){
+            leftclick.call(this);
+        }else{
+            rightclick.call(this);
+        }
+    }
+    function leftclick(){
+        if($(this).hasClass("flag")){
+            return;
+        }
+        if($(this).hasClass("lei")){
+            $(".lei").addClass("show");
+            alert("游戏结束！");
+            clearInterval(mt);
+            $(".scene div").unbind("mousedown");
+        }else{
+            $(this).addClass("num");
+            var pos=$(this).data("pos");
+            var n=0;
+            for(let i=pos.x-1;i<=pos.x+1;i++){
+                for(let j=pos.y-1;j<=pos.y+1;j++){
+                    if($("#"+i+"-"+j).hasClass("lei")){
+                        n++;
+                    }
+                }
+            }
+            if(n!=0){
+                $(this).html(n);    
+             }else{
+               $(this).html("");   
+                }
+            if(n==0){
+                for(let i=pos.x-1;i<=pos.x+1;i++){
+                    for(let j=pos.y-1;j<=pos.y+1;j++){
+                        var obj=$("#"+i+"-"+j);
+                        if(obj.length==1&&!obj.hasClass("num")){
+                                leftclick.call(obj[0]);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    function rightclick(){
+        if($(this).hasClass("num")){
+            return;
+        }
+        if($(this).hasClass("flag")){
+            $(this).removeClass("flag");
+            num++;
+        }else {
+            num--;
+            if (num < 0) {
+                num++;
+                alert("选择错误");
+                return;
+            }
+            $(this).addClass("flag");
+            if (num == 0) {
+                if ($(".flag").filter(".lei").length == leishu) {
+                    alert("扫雷成功！");
+                    clearInterval(mt);
+                    scor=ms;
+                    if(bestscor.length<3||bestscor.length>3&&scor<bestscor.scors){
+                        var name=prompt("请输入姓名：");
+                        bestscor.push({name,scors:scor});
+                        bestscor.sort(function(a,b){
+                            if(a.scors<b.scors){
+                                return -1;
+                            }else{
+                                return 1;
+                            }
+                        })
+                        if(bestscor.length>3){
+                            bestscor.pop();
+                        }
+                        reWrite();
+                    }
+                    localStorage.best=JSON.stringify(bestscor);
+                    alert("你本次用时为："+scor)
+                }
+            }
+        }
+        $(".flagnum").html("flag:"+num);
+    }
+    function reWrite(){
+        $(".paihang").html("");
+        if(bestscor){
+            $(bestscor).each(function(i,v){
+                $(".paihang").append("<li>姓名："+ v.name+"用时："+v.scors+"</li>");
+            })
+        }
+        
+    }
+    $(document).on("contextmenu",function(e){
+        e.preventDefault();
+    })
+</script>
+</html>
